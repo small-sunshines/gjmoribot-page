@@ -21,6 +21,7 @@ header
             nuxt-link.navbar-item(to="/functions/admins") 어드민 기능
             nuxt-link.navbar-item(to="/functions/inline") Inline Query
         nuxt-link.navbar-item(to="/running") 구동 환경
+        nuxt-link.navbar-item(to="/kaorukobot") KaorukoBot
       .navbar-end
 </template>
 
