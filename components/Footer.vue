@@ -3,4 +3,13 @@
     .footer
       .content.has-text-centered
         p Footer Test
+        a(href="https://bulma.io")
+          img(src="~/static/made-with-bulma.png" alt="Made with Bulma" width="128" height="24")
 </template>
+
+<style>
+.footer {
+  margin-top: -166px;
+  padding-bottom: 3rem !important;
+}
+</style>

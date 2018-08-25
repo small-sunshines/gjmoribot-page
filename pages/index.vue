@@ -1,8 +1,10 @@
 <template lang="pug">
-.columns
-  .column.is-hidden-mobile.is-3
-    div(style="background-color: #FFFF00; min-height: 30em;")
-  .column.is-9
+section.main-content.columns.is-fullheight
+  // https://codepen.io/andreich1980/pen/OmobJQ
+  aside.column.is-hidden-mobile.is-3.is-fullheight.section
+    p.menu-label.is-hidden-touch Menu
+  .column.is-9.is-fullheight.section
+    p.menu-label.is-hidden-touch Contents
 </template>
 
 <script>

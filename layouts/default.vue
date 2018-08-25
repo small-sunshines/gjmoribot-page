@@ -6,10 +6,17 @@ div
   Footer
 </template>
 
-<style scoped>
-.main {
-  min-height: 30em;
-  background-color: #0099FF;
+<style>
+html, body, #__nuxt {
+  height: 100%;
+}
+
+#__nuxt {
+  min-height: 100%;
+}
+
+.is-fullheight.columns {
+    height: calc(100vh - ( 3.25rem - .75rem ) );
 }
 </style>
 
