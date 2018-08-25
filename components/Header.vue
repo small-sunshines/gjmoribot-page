@@ -16,7 +16,10 @@ header
       .navbar-end
 </template>
 
-<style>
+<style scoped>
+  .navbar-item img {
+    border-radius: 5px;
+  }
 </style>
 
 <script>
