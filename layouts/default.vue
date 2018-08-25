@@ -28,6 +28,9 @@ export default {
   components: {
     Header,
     Footer
+  },
+  mounted () {
+    document.getElementById("loader-wrapper").style.display = 'none'
   }
 }
 </script>

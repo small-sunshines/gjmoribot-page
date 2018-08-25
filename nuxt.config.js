@@ -10,9 +10,7 @@ module.exports = {
   /*
   ** Build configuration
   */
-  loading: {
-    height: '0.5em'
-  },
+  loading: '~/components/loading.vue',
   router: {
     middleware: ['ssr-cookie']
   },
