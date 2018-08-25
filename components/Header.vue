@@ -1,6 +1,6 @@
 <template lang="pug">
 header
-  nav.navbar(role="navigation", aria-label="main navigation")
+  nav.navbar.is-success(role="navigation", aria-label="main navigation")
     .navbar-brand
       nuxt-link.navbar-item(to="/")
         img(src="~/static/icon.png")
@@ -13,6 +13,14 @@ header
     .navbar-menu(:class="{ 'is-active': showNav }")
       .navbar-start
         nuxt-link.navbar-item(to="/") Home
+        nuxt-link.navbar-item(to="/introduce") MoriBot 소개
+        .navbar-item.has-dropdown.is-hoverable
+          a.navbar-link 기능들
+          .navbar-dropdown
+            nuxt-link.navbar-item(to="/functions/commands") 명령어
+            nuxt-link.navbar-item(to="/functions/admins") 어드민 기능
+            nuxt-link.navbar-item(to="/functions/inline") Inline Query
+        nuxt-link.navbar-item(to="/running") 구동 환경
       .navbar-end
 </template>
 

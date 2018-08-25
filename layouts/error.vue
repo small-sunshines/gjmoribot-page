@@ -1,6 +1,5 @@
-<template>
-  <div id="contents" class="container">
-  </div>
+<template lang="pug">
+  #contents.container
 </template>
 
 <script>

@@ -9,7 +9,7 @@
 
 <style>
 .footer {
-  margin-top: -166px;
   padding-bottom: 3rem !important;
+  margin-top: -172px !important;
 }
 </style>
