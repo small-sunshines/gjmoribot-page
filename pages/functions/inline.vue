@@ -1,5 +1,7 @@
 <template lang="pug">
-p.menu-label.is-hidden-touch inlnie query
+div
+  p.menu-label.is-hidden-touch inlnie query
+  hr
 </template>
 
 <script>

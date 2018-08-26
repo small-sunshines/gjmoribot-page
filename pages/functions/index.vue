@@ -1,5 +1,7 @@
 <template lang="pug">
-p.menu-label.is-hidden-touch functions index
+div
+  p.menu-label.is-hidden-touch functions index
+  hr
 </template>
 
 <script>

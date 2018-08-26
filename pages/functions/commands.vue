@@ -1,5 +1,7 @@
 <template lang="pug">
-p.menu-label.is-hidden-touch commands
+div
+  p.menu-label.is-hidden-touch commands
+  hr
 </template>
 
 <script>

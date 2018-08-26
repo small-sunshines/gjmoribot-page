@@ -1,6 +1,6 @@
 <template lang="pug">
 header
-  nav.navbar.is-success(role="navigation", aria-label="main navigation")
+  nav.navbar.is-info(role="navigation", aria-label="main navigation")
     .navbar-brand
       nuxt-link.navbar-item(to="/")
         img(src="~/static/icon.png")
@@ -13,7 +13,7 @@ header
     .navbar-menu(:class="{ 'is-active': showNav }")
       .navbar-start
         nuxt-link.navbar-item(to="/") Home
-        nuxt-link.navbar-item(to="/introduce") MoriBot 소개
+        nuxt-link.navbar-item(to="/introduce") MoriBot
         .navbar-item.has-dropdown.is-hoverable
           a.navbar-link 기능들
           .navbar-dropdown
