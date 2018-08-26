@@ -18,6 +18,7 @@ header
           a.navbar-link 기능들
           .navbar-dropdown
             nuxt-link.navbar-item(to="/functions/commands") 명령어
+            nuxt-link.navbar-item(to="/functions/chat_commands") Chat Command
             nuxt-link.navbar-item(to="/functions/admins") 어드민 기능
             nuxt-link.navbar-item(to="/functions/inline") Inline Query
         nuxt-link.navbar-item(to="/running") 구동 환경

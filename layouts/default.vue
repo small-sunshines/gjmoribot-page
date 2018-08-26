@@ -20,6 +20,8 @@
           li
             nuxt-link(to="/functions/commands") 명령어
           li
+            nuxt-link(to="/functions/chat_commands") Chat Command
+          li
             nuxt-link(to="/functions/admins") 어드민 기능
           li
             nuxt-link(to="/functions/inline") Inline Query
