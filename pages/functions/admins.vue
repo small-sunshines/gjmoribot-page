@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p.menu-label.is-hidden-touch admins
+  p.menu-label admins
   hr
 </template>
 

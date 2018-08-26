@@ -4,7 +4,7 @@
   section.main-content.columns
     // https://codepen.io/andreich1980/pen/OmobJQ
     aside.column.is-hidden-mobile.is-3.section
-      p.menu-label.is-hidden-touch Menu
+      p.menu-label Menu
       hr
       aside.menu
         p.menu-label Home

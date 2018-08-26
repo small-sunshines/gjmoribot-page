@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p.menu-label.is-hidden-touch index
+  p.menu-label index
   hr
   .content
     figure.image#mainimg
@@ -15,9 +15,10 @@ div
 
 <style scoped>
 #mainimg {
-  width: 30em;
+  width: 20em;
   height: auto;
   margin-bottom: 2em;
+  margin-left: 0em;
 }
 a.button.is-telegram {
   background-color: #37AEE2;

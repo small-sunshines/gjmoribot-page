@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p.menu-label.is-hidden-touch commands
+  p.menu-label commands
   hr
 </template>
 

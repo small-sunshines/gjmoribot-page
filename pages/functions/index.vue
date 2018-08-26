@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p.menu-label.is-hidden-touch functions index
+  p.menu-label functions index
   hr
 </template>
 

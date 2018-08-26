@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p.menu-label.is-hidden-touch KaorukoBot
+  p.menu-label KaorukoBot
   hr
   .content
     figure.image#mainimg
@@ -24,14 +24,19 @@ div
 
 <style scoped>
 #mainimg {
-  width: 20em;
+  width: 17em;
   height: auto;
   margin-bottom: 2em;
+  margin-left: 0em;
 }
 a.button.is-discord {
   background-color: #7289DA;
   color: #fff;
   border-radius: 10px;
+  
+}
+a.button.is-discord p {
+  font-size: 0.8em;
 }
 </style>
 

@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p.menu-label.is-hidden-touch inline queries
+  p.menu-label inline queries
   hr
 </template>
 

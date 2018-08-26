@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p.menu-label.is-hidden-touch chat commands
+  p.menu-label chat commands
   hr
 </template>
 

@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p.menu-label.is-hidden-touch introuduce
+  p.menu-label introuduce
   hr
   .content
     figure.image#mainimg

@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p.menu-label.is-hidden-touch running
+  p.menu-label running
   hr
   .content
     h1 모리봇 구동환경
