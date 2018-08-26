@@ -15,7 +15,7 @@ div
       | &nbsp; 
       a(href="https://git.mori.space/small-sunshine/kaorukoBot" target="_blank") https://git.mori.space/small-sunshine/kaorukoBot
     br
-    a.button.is-large.is-discord()
+    a.button.is-large.is-discord(disabled)
       p
         fa-icon(pack="fab", name="discord" size="lg")
         | &nbsp; KaorukoBot Comming soon!!

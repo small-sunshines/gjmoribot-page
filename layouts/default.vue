@@ -14,7 +14,7 @@
         p.menu-label Introduce
         ul.menu-list
           li
-            nuxt-link(to="/introduce") MoriBot 소개
+            nuxt-link(to="/introduce") MoriBot
         p.menu-label Functions
         ul.menu-list
           li
