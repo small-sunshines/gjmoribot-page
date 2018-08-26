@@ -13,6 +13,11 @@ div
     fa-icon(pack="fab" name="github")
     | &nbsp; 
     a(href="https://git.mori.space/small-sunshine/kaorukoBot" target="_blank") https://git.mori.space/small-sunshine/kaorukoBot
+  br
+  a.button.is-large.is-discord()
+    p
+      fa-icon(pack="fab", name="discord" size="lg")
+      | &nbsp; KaorukoBot Comming soon!!
     
 </template>
 
@@ -21,6 +26,11 @@ div
   width: 20em;
   height: auto;
   margin-bottom: 2em;
+}
+a.button.is-discord {
+  background-color: #7289DA;
+  color: #fff;
+  border-radius: 10px;
 }
 </style>
 

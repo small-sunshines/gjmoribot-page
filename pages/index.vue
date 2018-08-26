@@ -21,6 +21,7 @@ div
 a.button.is-telegram {
   background-color: #37AEE2;
   color: #fff;
+  border-radius: 10px;
 }
 </style>
 
