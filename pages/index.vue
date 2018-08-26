@@ -2,14 +2,15 @@
 div
   p.menu-label.is-hidden-touch index
   hr
-  figure.image#mainimg
-    img.is-rounded(src="~/static/mori1.png")
-  p 안녕하세요. 모리입니다.
-  br
-  a.button.is-large.is-telegram(href="https://t.me/gjmoribot" target="_blank")
-    p
-      fa-icon(pack="fab", name="telegram" size="lg")
-      | &nbsp; MoriBot with Telegram
+  .content
+    figure.image#mainimg
+      img.is-rounded(src="~/static/mori1.png")
+    h3 안녕하세요. 모리입니다.
+    br
+    a.button.is-large.is-telegram(href="https://t.me/gjmoribot" target="_blank")
+      p
+        fa-icon(pack="fab", name="telegram" size="lg")
+        | &nbsp; MoriBot with Telegram
 </template>
 
 <style scoped>
