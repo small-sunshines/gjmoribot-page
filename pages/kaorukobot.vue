@@ -41,8 +41,31 @@ a.button.is-discord p {
 </style>
 
 <script>
+import buildmeta from '~/assets/buildmeta'
+
+const title = 'KaorukoBot :: MoriBot'
+const { meta, link } = buildmeta({
+  title,
+  url: 'https://moribot.mori.space/kaorukobot',
+  siteName: 'MoriBot Homepage',
+  desc: '모리봇의 디스코드 이식판, 카오루코봇을 소개하는 페이지입니다.',
+  image: null,
+  width: null,
+  height: null,
+  author: 'small_sunshine',
+  twitterCreator: '@jioo0224'
+}, null, null)
+
 export default {
   components: {
+    
+  },
+  head () {
+    return {
+      title,
+      meta,
+      link
+    }
   }
 }
 </script>

@@ -29,10 +29,31 @@ a.button.is-telegram {
 
 
 <script>
+import buildmeta from '~/assets/buildmeta'
+
+const title = 'MoriBot'
+const { meta, link } = buildmeta({
+  title,
+  url: 'https://moribot.mori.space/',
+  siteName: 'MoriBot Homepage',
+  desc: '모리봇 홈페이지입니다.',
+  image: null,
+  width: null,
+  height: null,
+  author: 'small_sunshine',
+  twitterCreator: '@jioo0224'
+}, null, null)
 
 export default {
   components: {
     
+  },
+  head () {
+    return {
+      title,
+      meta,
+      link
+    }
   }
 }
 </script>
