@@ -54,7 +54,9 @@ const { meta, link } = buildmeta({
   height: null,
   author: 'small_sunshine',
   twitterCreator: '@jioo0224'
-}, null, null)
+}, [
+  {hid: 'theme-color', name: 'theme-color', content: '#7289DA'}
+], null)
 
 export default {
   components: {
