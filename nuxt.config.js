@@ -6,9 +6,6 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    meta: [
-      {name: 'theme-color', content: '#37AEE2'}
-    ]
   },
   /*
   ** Build configuration
