@@ -11,6 +11,12 @@ div
       p
         fa-icon(pack="fab", name="telegram" size="lg")
         | &nbsp; MoriBot with Telegram
+    br
+    br
+    a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/gjmoribot" target="_blank")
+      p
+        fa-icon(pack="fab", name="git" size="lg")
+        | &nbsp; Explore to MoriBot
 </template>
 
 <style scoped>
@@ -23,6 +29,11 @@ div
 a.button.is-telegram {
   background-color: #37AEE2;
   color: #fff;
+  border-radius: 10px;
+}
+a.button.is-git {
+  background-color: #fff;
+  color: #000;
   border-radius: 10px;
 }
 </style>

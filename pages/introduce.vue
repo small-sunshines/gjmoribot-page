@@ -13,10 +13,10 @@ div
     p 모리는 <b>GJ부</b>라는 만화에 등장하는 등장인물입니다.
     p 캐릭터의 저작권은 원작자에게 있습니다.
     br
-    p
-      fa-icon(pack="fab" name="github")
-      | &nbsp; 
-      a(href="https://git.mori.space/small-sunshine/gjmoribot" target="_blank") https://git.mori.space/small-sunshine/gjmoribot
+    a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/gjmoribot" target="_blank")
+      p
+        fa-icon(pack="fab", name="git" size="lg")
+        | &nbsp; Explore to MoriBot
 </template>
 
 <style scoped>
@@ -24,6 +24,11 @@ div
   width: 10em;
   height: auto;
   margin-bottom: 2em;
+}
+a.button.is-git {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
 }
 </style>
 

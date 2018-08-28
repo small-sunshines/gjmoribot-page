@@ -70,7 +70,7 @@ module.exports = {
         icons: ['faEnvelope']
       }, */{
         package: '@fortawesome/fontawesome-free-brands',
-        icons: ['faTelegram', 'faDiscord'/*, 'faNpm'*/, 'faGithub'/*, 'faNode'*/]
+        icons: ['faTelegram', 'faDiscord'/*, 'faNpm'*/, 'faGit'/*, 'faNode'*/]
       }/*, {
         package: '@fortawesome/fontawesome-free-solid',
         icons: ['faExclamation']
