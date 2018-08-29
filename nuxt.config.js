@@ -65,16 +65,15 @@ module.exports = {
   },
   fontAwesome: {
     packs: [
-      /*{
-        package: '@fortawesome/fontawesome-free-regular',
-        icons: ['faEnvelope']
-      }, */{
+      {
         package: '@fortawesome/fontawesome-free-brands',
-        icons: ['faTelegram', 'faDiscord'/*, 'faNpm'*/, 'faGit'/*, 'faNode'*/]
-      }/*, {
+        icons: ['faTelegram', 'faDiscord', 'faGit']
+      }, {
         package: '@fortawesome/fontawesome-free-solid',
-        icons: ['faExclamation']
-      }*/
+        icons: ['faLanguage', 'faHome', 'faWrench', 'faRobot',
+          'faTerminal', 'faComment', 'faUnlockAlt', 'faSignal',
+          'faServer']
+      }
     ]
   },
   'rfg-icon': {
