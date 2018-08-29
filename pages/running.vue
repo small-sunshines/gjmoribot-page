@@ -11,22 +11,34 @@ div
           td 부품이름
       tbody
         tr
-          td CPU
+          td 
+            fa-icon(pack="fas" name="microchip")
+            | &nbsp; CPU
           td Intel i3-2100
         tr
-          td RAM
+          td
+            fa-icon(pack="fas" name="memory")
+            | &nbsp; RAM
           td DDR3-10600 4GB 1ea, DDR3-12800 4GB 1ea
         tr
-          td SSD
+          td
+            fa-icon(pack="fas" name="hdd")
+            | &nbsp; SSD
           td TAMMUZ RX631 64GB
         tr
-          td HDD
+          td
+            fa-icon(pack="fas" name="hdd")
+            | &nbsp; HDD
           td MARSHAL MAL21000SA-T54 2.5in 1TB
         tr
-          td PSU
+          td
+            fa-icon(pack="fas" name="plug")
+            | &nbsp; Power
           td MICRONICS CYCLONE II
         tr
-          td Docker
+          td
+            fa-icon(pack="fab" name="docker")
+            | &nbsp; Docker
           td Yes
 
 </template>

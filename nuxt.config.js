@@ -67,12 +67,14 @@ module.exports = {
     packs: [
       {
         package: '@fortawesome/fontawesome-free-brands',
-        icons: ['faTelegram', 'faDiscord', 'faGit']
+        icons: ['faTelegram', 'faDiscord',
+          'faGit', 'faDocker']
       }, {
         package: '@fortawesome/fontawesome-free-solid',
         icons: ['faLanguage', 'faHome', 'faWrench', 'faRobot',
           'faTerminal', 'faComment', 'faUnlockAlt', 'faSignal',
-          'faServer']
+          'faServer', 'faMicrochip', 'faMemory', 'faHdd',
+          'faPlug']
       }
     ]
   },
