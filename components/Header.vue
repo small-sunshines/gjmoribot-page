@@ -2,7 +2,7 @@
 header
   nav.navbar.is-info(role="navigation", aria-label="main navigation")
     .navbar-brand
-      nuxt-link.navbar-item(to="/")
+      nuxt-link.navbar-item(:to="$i18n.path('')")
         img(src="~/static/icon.png")
         p(style="margin-left: 0.5em;") MoriBot
       a.navbar-burger(role="button" aria-label="menu" aria-expanded="false"
@@ -12,47 +12,52 @@ header
         span(aria-hidden="true")
     .navbar-menu(:class="{ 'is-active': showNav }")
       .navbar-start
-        nuxt-link.navbar-item(to="/") 
+        nuxt-link.navbar-item(:to="$i18n.path('')") 
           fa-icon(pack="fas" name="home")
-          | &nbsp; Home
-        nuxt-link.navbar-item(to="/introduce")
+          | &nbsp; {{ $t('header.home') }}
+        nuxt-link.navbar-item(:to="$i18n.path('introduce')")
           fa-icon(pack="fas" name="robot")
-          | &nbsp; MoriBot
+          | &nbsp; {{ $t('header.moribot') }}
         .navbar-item.has-dropdown.is-hoverable
           a.navbar-link
             fa-icon(pack="fas" name="wrench")
-            | &nbsp; 기능들
+            | &nbsp; {{ $t('header.functions') }}
           .navbar-dropdown
-            nuxt-link.navbar-item(to="/functions/commands") 
+            nuxt-link.navbar-item(:to="$i18n.path('functions/commands')") 
               fa-icon(pack="fas" name="terminal")
-              | &nbsp; 명령어
-            nuxt-link.navbar-item(to="/functions/chat_commands")
+              | &nbsp; {{ $t('header.commands') }}
+            nuxt-link.navbar-item(:to="$i18n.path('functions/chat_commands')")
               fa-icon(pack="fas" name="comment")
-              | &nbsp; Chat Command
-            nuxt-link.navbar-item(to="/functions/admins") 
+              | &nbsp; {{ $t('header.chatcommands') }}
+            nuxt-link.navbar-item(:to="$i18n.path('functions/admins')") 
               fa-icon(pack="fas" name="unlock-alt")
-              | &nbsp; 어드민 기능
-            nuxt-link.navbar-item(to="/functions/inline")
+              | &nbsp; {{ $t('header.admins') }}
+            nuxt-link.navbar-item(:to="$i18n.path('functions/inline')")
               fa-icon(pack="fas" name="signal")
-              | &nbsp; Inline Query
-        nuxt-link.navbar-item(to="/running")
+              | &nbsp; {{ $t('header.inlinequery') }}
+        nuxt-link.navbar-item(:to="$i18n.path('running')")
           fa-icon(pack="fas" name="server")
-          | &nbsp; 구동 환경
-        nuxt-link.navbar-item(to="/kaorukobot")
+          | &nbsp; {{ $t('header.server') }}
+        nuxt-link.navbar-item(:to="$i18n.path('kaorukobot')")
           fa-icon(pack="fab" name="discord")
-          | &nbsp; KaorukoBot
+          | &nbsp; {{ $t('header.kaorukobot') }}
       .navbar-end
         .navbar-item.has-dropdown.is-hoverable.is-right
           a.navbar-link
             fa-icon(pack="fas", name="language")
-            | &nbsp; 언어 변경
+            | &nbsp; {{ $t('header.changelang') }}
           .navbar-dropdown
-            a.navbar-item 🇰🇷 한국어
-            a.navbar-item 🇺🇸 English
-            // a.navbar-item 🇯🇵 日本語
-            // a.navbar-item 🇨🇳 中国
-            // a.navbar-item 🇷🇺 русский
-</template>
+            div(v-if="$i18n.locale !== 'ko'")
+              nuxt-link.navbar-item(:to="$route.fullPath.replace(/\^\\/[\^\\/]+/, '')") 🇰🇷 한국어
+            div(v-if="$i18n.locale !== 'en'")
+              nuxt-link.navbar-item(:to="`/en` + $route.fullPath") 🇺🇸 English
+            // div(v-if="$i18n.locale !== 'jp'")
+              nuxt-link.navbar-item(:to="`/jp` + $route.fullPath") 🇯🇵 日本語
+            // div(v-if="$i18n.locale !== 'cn'")
+              nuxt-link.navbar-item(:to="`/cn` + $route.fullPath") 🇨🇳 中国
+            // div(v-if="$i18n.locale !== 'ru'")
+              nuxt-link.navbar-item(:to="`/ru` + $route.fullPath") 🇷🇺 русский
+</template> 
 
 <style scoped>
   .navbar-item img {

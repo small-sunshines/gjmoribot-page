@@ -12,8 +12,9 @@ module.exports = {
   */
   loading: '~/components/loading.vue',
   router: {
-    middleware: ['ssr-cookie']
+    middleware: ['ssr-cookie', 'i18n']
   },
+  plugins: ['~/plugins/i18n.js'],
   build: {
     postcss: {
       plugins: {
