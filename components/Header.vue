@@ -47,16 +47,11 @@ header
             fa-icon(pack="fas", name="language")
             | &nbsp; {{ $t('header.changelang') }}
           .navbar-dropdown
-            div(v-if="$i18n.locale !== 'ko'")
-              nuxt-link.navbar-item(:to="switchLocalePath('ko')") 🇰🇷 한국어
-            div(v-if="$i18n.locale !== 'en'")
-              nuxt-link.navbar-item(:to="switchLocalePath('en')") 🇺🇸 English
-            // div(v-if="$i18n.locale !== 'jp'")
-              nuxt-link.navbar-item(:to="switchLocalePath('jp')") 🇯🇵 日本語
-            // div(v-if="$i18n.locale !== 'cn'")
-              nuxt-link.navbar-item(:to="switchLocalePath('cn')") 🇨🇳 中国
-            // div(v-if="$i18n.locale !== 'ru'")
-              nuxt-link.navbar-item(:to="switchLocalePath('ru')") 🇷🇺 русский
+            nuxt-link.navbar-item(:to="switchLocalePath('ko')") 🇰🇷 한국어
+            nuxt-link.navbar-item(:to="switchLocalePath('en')") 🇺🇸 English
+            // nuxt-link.navbar-item(:to="switchLocalePath('jp')") 🇯🇵 日本語
+            // nuxt-link.navbar-item(:to="switchLocalePath('cn')") 🇨🇳 中国
+            // nuxt-link.navbar-item(:to="switchLocalePath('ru')") 🇷🇺 русский
 </template> 
 
 <style scoped>
