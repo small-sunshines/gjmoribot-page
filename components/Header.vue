@@ -2,7 +2,7 @@
 header
   nav.navbar.is-info(role="navigation", aria-label="main navigation")
     .navbar-brand
-      nuxt-link.navbar-item(:to="$i18n.path('')")
+      nuxt-link.navbar-item(:to="localePath('index')")
         img(src="~/static/icon.png")
         p(style="margin-left: 0.5em;") MoriBot
       a.navbar-burger(role="button" aria-label="menu" aria-expanded="false"
@@ -12,10 +12,10 @@ header
         span(aria-hidden="true")
     .navbar-menu(:class="{ 'is-active': showNav }")
       .navbar-start
-        nuxt-link.navbar-item(:to="$i18n.path('')") 
+        nuxt-link.navbar-item(:to="localePath('index')") 
           fa-icon(pack="fas" name="home")
           | &nbsp; {{ $t('header.home') }}
-        nuxt-link.navbar-item(:to="$i18n.path('introduce')")
+        nuxt-link.navbar-item(:to="localePath('introduce')")
           fa-icon(pack="fas" name="robot")
           | &nbsp; {{ $t('header.moribot') }}
         .navbar-item.has-dropdown.is-hoverable
@@ -23,22 +23,22 @@ header
             fa-icon(pack="fas" name="wrench")
             | &nbsp; {{ $t('header.functions') }}
           .navbar-dropdown
-            nuxt-link.navbar-item(:to="$i18n.path('functions/commands')") 
+            nuxt-link.navbar-item(:to="localePath('functions-commands')") 
               fa-icon(pack="fas" name="terminal")
               | &nbsp; {{ $t('header.commands') }}
-            nuxt-link.navbar-item(:to="$i18n.path('functions/chat_commands')")
+            nuxt-link.navbar-item(:to="localePath('functions-chatcommands')")
               fa-icon(pack="fas" name="comment")
               | &nbsp; {{ $t('header.chatcommands') }}
-            nuxt-link.navbar-item(:to="$i18n.path('functions/admins')") 
+            nuxt-link.navbar-item(:to="localePath('functions-admins')") 
               fa-icon(pack="fas" name="unlock-alt")
               | &nbsp; {{ $t('header.admins') }}
-            nuxt-link.navbar-item(:to="$i18n.path('functions/inline')")
+            nuxt-link.navbar-item(:to="localePath('functions-inline')")
               fa-icon(pack="fas" name="signal")
               | &nbsp; {{ $t('header.inlinequery') }}
-        nuxt-link.navbar-item(:to="$i18n.path('running')")
+        nuxt-link.navbar-item(:to="localePath('running')")
           fa-icon(pack="fas" name="server")
           | &nbsp; {{ $t('header.server') }}
-        nuxt-link.navbar-item(:to="$i18n.path('kaorukobot')")
+        nuxt-link.navbar-item(:to="localePath('kaorukobot')")
           fa-icon(pack="fab" name="discord")
           | &nbsp; {{ $t('header.kaorukobot') }}
       .navbar-end
@@ -48,15 +48,15 @@ header
             | &nbsp; {{ $t('header.changelang') }}
           .navbar-dropdown
             div(v-if="$i18n.locale !== 'ko'")
-              nuxt-link.navbar-item(:to="$route.fullPath.replace(/\^\\/[\^\\/]+/, '')") 🇰🇷 한국어
+              nuxt-link.navbar-item(:to="switchLocalePath('ko')") 🇰🇷 한국어
             div(v-if="$i18n.locale !== 'en'")
-              nuxt-link.navbar-item(:to="`/en` + $route.fullPath") 🇺🇸 English
+              nuxt-link.navbar-item(:to="switchLocalePath('en')") 🇺🇸 English
             // div(v-if="$i18n.locale !== 'jp'")
-              nuxt-link.navbar-item(:to="`/jp` + $route.fullPath") 🇯🇵 日本語
+              nuxt-link.navbar-item(:to="switchLocalePath('jp')") 🇯🇵 日本語
             // div(v-if="$i18n.locale !== 'cn'")
-              nuxt-link.navbar-item(:to="`/cn` + $route.fullPath") 🇨🇳 中国
+              nuxt-link.navbar-item(:to="switchLocalePath('cn')") 🇨🇳 中国
             // div(v-if="$i18n.locale !== 'ru'")
-              nuxt-link.navbar-item(:to="`/ru` + $route.fullPath") 🇷🇺 русский
+              nuxt-link.navbar-item(:to="switchLocalePath('ru')") 🇷🇺 русский
 </template> 
 
 <style scoped>

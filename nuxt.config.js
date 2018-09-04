@@ -12,9 +12,8 @@ module.exports = {
   */
   loading: '~/components/loading.vue',
   router: {
-    middleware: ['ssr-cookie', 'i18n']
+    middleware: ['ssr-cookie']
   },
-  plugins: ['~/plugins/i18n.js'],
   build: {
     postcss: {
       plugins: {
@@ -50,7 +49,25 @@ module.exports = {
     ['@nuxtjs/sitemap'],
     ['qonfucius-nuxt-fontawesome'],
     'nuxt-rfg-icon',
-    '@nuxtjs/bulma'
+    '@nuxtjs/bulma',
+    ['nuxt-i18n', {
+      locales: [
+        {
+          code: 'ko',
+          iso: 'ko-KR',
+          file: 'ko.js'
+        }, {
+          code: 'en',
+          iso: 'en-US',
+          file: 'en.js'
+        }],
+      defaultLocale: 'ko',
+      lazy: true,
+      langDir: 'locales/',
+      detectBrowserLanguage: {
+        useCookie: false
+      }
+    }]
   ],
   /*'google-adsense': {
     id: 'ca-pub-2810659463174293',
