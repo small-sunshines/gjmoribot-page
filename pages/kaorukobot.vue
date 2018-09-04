@@ -1,4 +1,79 @@
+<template lang="pug">
+div
+  p.menu-label KaorukoBot
+  hr
+  .content
+    figure.image#mainimg
+      img.is-rounded(src="~/static/kaoruko.jpg")
+    h3 "아바바바바바바바바바바"
+    br
+    p 카오루코봇은 모리봇의 디스코드 이식판으로, 현재 제작중에 있습니다.
+    p 캐릭터는 코믹 걸즈의 모에타 카오루코로 정하였습니다.
+    br
+    a.button.is-large.is-discord(disabled)
+      p
+        fa-icon(pack="fab", name="discord" size="lg")
+        | &nbsp; KaorukoBot Comming soon!!
+    br
+    br
+    a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/kaorukoBot" target="_blank")
+      p
+        fa-icon(pack="fab", name="git" size="lg")
+        | &nbsp; Explore to KaorukoBot
+    
+</template>
+
+<style scoped>
+#mainimg {
+  width: 17em;
+  height: auto;
+  margin-bottom: 2em;
+  margin-left: 0em;
+}
+a.button.is-discord {
+  background-color: #7289DA;
+  color: #fff;
+  border-radius: 10px;
+  
+}
+a.button.is-discord p {
+  font-size: 0.8em;
+}
+a.button.is-git {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+</style>
+
 <script>
-import KaorukoBot from '~/pages/_lang/kaorukobot'
-export default KaorukoBot
+import buildmeta from '~/assets/buildmeta'
+
+const title = 'KaorukoBot :: MoriBot'
+const { meta, link } = buildmeta({
+  title,
+  url: 'https://moribot.mori.space/kaorukobot',
+  siteName: 'MoriBot Homepage',
+  desc: '모리봇의 디스코드 이식판, 카오루코봇을 소개하는 페이지입니다.',
+  image: null,
+  width: null,
+  height: null,
+  author: 'small_sunshine',
+  twitterCreator: '@jioo0224'
+}, [
+  {hid: 'theme-color', name: 'theme-color', content: '#7289DA'}
+], null)
+
+export default {
+  components: {
+    
+  },
+  head () {
+    return {
+      title,
+      meta,
+      link
+    }
+  }
+}
 </script>

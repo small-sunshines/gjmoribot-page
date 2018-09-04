@@ -35,11 +35,12 @@
     "json-stringify-pretty-compact": "^1.0.4",
     "log4js": "^2.11.0",
     "nuxt": "^1.0.0",
+    "nuxt-i18n": "^5.2.1",
     "nuxt-rfg-icon": "^0.4.3",
     "on-finished": "^2.3.0",
     "pug": "^2.0.0-rc.4",
     "qonfucius-nuxt-fontawesome": "^0.0.1",
-    "vue-i18n": "^7.3.2"
+    "vue-i18n": "^8.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
