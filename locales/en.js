@@ -55,22 +55,22 @@ export default {
   functions: {
     index: {
       command: {
-        title: '명령어',
-        content: '모리봇의 명령어를 소개합니다!'
+        title: 'Command',
+        content: 'Introducing Moribot\'s commands!'
       },
       chatCommand: {
         title: 'Chat Command',
-        content: '모리봇만의 Chat Command를 소개합니다!'
+        content: 'Introducing Mori bot only Chat Command!'
       },
       admin: {
-        title: '어드민 기능',
-        content: '모리봇의 어드민 기능을 소개합니다!'
+        title: 'Admin Function',
+        content: 'Introducing the admin functions of MoriBot!'
       },
       inline: {
         title: 'Inline Query',
-        content: '모리봇의 Inline Query 기능을 소개합니다.'
+        content: 'Introduces MoriBot\'s Inline Query!'
       },
-      go: '바로가기!'
+      go: 'Shortcuts!'
     }
   }
 }

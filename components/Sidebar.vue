@@ -6,7 +6,7 @@ aside.menu
     | &nbsp; {{ $t('sidebar.home') }}
   ul.menu-list
     li
-      nuxt-link(to="/")
+      nuxt-link(:to="localePath('index')")
         fa-icon(pack="fas" name="home")
         | &nbsp; {{ $t('sidebar.home') }}
   p.menu-label
@@ -14,7 +14,7 @@ aside.menu
     | &nbsp; {{ $t('sidebar.introduce') }}
   ul.menu-list
     li
-      nuxt-link(to="/introduce")
+      nuxt-link(:to="localePath('introduce')")
         fa-icon(pack="fas" name="robot")
         | &nbsp; {{ $t('sidebar.bot') }}
   p.menu-label
@@ -22,19 +22,19 @@ aside.menu
     | &nbsp; {{ $t('sidebar.functions') }}
   ul.menu-list
     li
-      nuxt-link(to="/functions/commands")
+      nuxt-link(:to="localePath('functions-commands')")
         fa-icon(pack="fas" name="terminal")
         | &nbsp; {{ $t('sidebar.command') }}
     li
-      nuxt-link(to="/functions/chatcommands")
+      nuxt-link(:to="localePath('functions-chatcommands')")
         fa-icon(pack="fas" name="comment")
         | &nbsp; {{ $t('sidebar.chatCommand') }}
     li
-      nuxt-link(to="/functions/admins")
+      nuxt-link(:to="localePath('functions-admins')")
         fa-icon(pack="fas" name="unlock-alt")
         | &nbsp; {{ $t('sidebar.admin') }}
     li
-      nuxt-link(to="/functions/inline")
+      nuxt-link(:to="localePath('functions-inline')")
         fa-icon(pack="fas" name="signal")
         | &nbsp; {{ $t('sidebar.inline') }}
   p.menu-label
@@ -42,7 +42,7 @@ aside.menu
     | &nbsp; {{ $t('sidebar.env') }}
   ul.menu-list
     li
-      nuxt-link(to="/running")
+      nuxt-link(:to="localePath('running')")
         fa-icon(pack="fas" name="server")
         | &nbsp; {{ $t('sidebar.server') }}
   p.menu-label
@@ -50,7 +50,7 @@ aside.menu
     | &nbsp; {{ $t('sidebar.discord') }}
   ul.menu-list
     li
-      nuxt-link(to="/kaorukobot")
+      nuxt-link(:to="localePath('kaorukobot')")
         fa-icon(pack="fab" name="discord")
         | &nbsp; {{ $t('sidebar.kaorukoBot') }}
 </template>
