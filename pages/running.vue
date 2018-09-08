@@ -3,12 +3,8 @@ div
   p.menu-label running
   hr
   .content
-    h1 모리봇 구동환경
+    h1 {{ $t('running.env') }}
     table
-      thead
-        tr
-          td 부품
-          td 부품이름
       tbody
         tr
           td 
@@ -34,7 +30,7 @@ div
           td
             fa-icon(pack="fas" name="plug")
             | &nbsp; Power
-          td MICRONICS CYCLONE II
+          td MICRONICS CYCLONE III
         tr
           td
             fa-icon(pack="fab" name="docker")

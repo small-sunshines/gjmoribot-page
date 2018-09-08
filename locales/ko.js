@@ -12,7 +12,7 @@ export default {
     changelang: '언어 변경'
   },
   footer: {
-    copyright: 'Copyright 2018. small-sunshine all rights reserved.'
+    copyright: 'Copyright 2018. 볕뉘 all rights reserved.'
   },
   sidebar: {
     home: 'Home',
@@ -32,6 +32,9 @@ export default {
     hello: '안녕하세요. 모리입니다.',
     telegram: 'MoriBot with Telegram',
     git: 'Explore to MoriBot'
+  },
+  running: {
+    env: '모리봇 구동환경'
   },
   kaorukobot: {
     ababa: '"아바바바바바바바바바바"',
