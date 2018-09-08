@@ -38,10 +38,6 @@ try {
 
   app.use(userAgent.express())
 
-  // static setup (chrome.html)
-  app.use('/static/jquery',
-    express.static(path.resolve(__dirname, 'node_modules', 'jquery', 'dist')))
-
   // health moniter
   app.all('/health', (req, res) => {
     res.status(200).send().end()

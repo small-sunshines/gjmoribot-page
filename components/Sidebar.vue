@@ -3,54 +3,54 @@
 aside.menu
   p.menu-label
     fa-icon(pack="fas" name="home")
-    | &nbsp;Home
+    | &nbsp; {{ $t('sidebar.home') }}
   ul.menu-list
     li
       nuxt-link(to="/")
         fa-icon(pack="fas" name="home")
-        | &nbsp; Home
+        | &nbsp; {{ $t('sidebar.home') }}
   p.menu-label
     fa-icon(pack="fas" name="robot")
-    | &nbsp; Introduce
+    | &nbsp; {{ $t('sidebar.introduce') }}
   ul.menu-list
     li
       nuxt-link(to="/introduce")
         fa-icon(pack="fas" name="robot")
-        | &nbsp; MoriBot
+        | &nbsp; {{ $t('sidebar.bot') }}
   p.menu-label
     fa-icon(pack="fas" name="wrench")
-    | &nbsp; Functions
+    | &nbsp; {{ $t('sidebar.functions') }}
   ul.menu-list
     li
       nuxt-link(to="/functions/commands")
         fa-icon(pack="fas" name="terminal")
-        | &nbsp; 명령어
+        | &nbsp; {{ $t('sidebar.command') }}
     li
       nuxt-link(to="/functions/chat_commands")
         fa-icon(pack="fas" name="comment")
-        | &nbsp; Chat Command
+        | &nbsp; {{ $t('sidebar.chatCommand') }}
     li
       nuxt-link(to="/functions/admins")
         fa-icon(pack="fas" name="unlock-alt")
-        | &nbsp; 어드민 기능
+        | &nbsp; {{ $t('sidebar.admin') }}
     li
       nuxt-link(to="/functions/inline")
         fa-icon(pack="fas" name="signal")
-        | &nbsp; Inline Query
+        | &nbsp; {{ $t('sidebar.inline') }}
   p.menu-label
     fa-icon(pack="fas" name="server")
-    | &nbsp; Environment
+    | &nbsp; {{ $t('sidebar.env') }}
   ul.menu-list
     li
       nuxt-link(to="/running")
         fa-icon(pack="fas" name="server")
-        | &nbsp; 구동 환경
+        | &nbsp; {{ $t('sidebar.server') }}
   p.menu-label
     fa-icon(pack="fab" name="discord")
-    | &nbsp; Discord
+    | &nbsp; {{ $t('sidebar.discord') }}
   ul.menu-list
     li
       nuxt-link(to="/kaorukobot")
         fa-icon(pack="fab" name="discord")
-        | &nbsp; KaorukoBot
+        | &nbsp; {{ $t('sidebar.kaorukoBot') }}
 </template>

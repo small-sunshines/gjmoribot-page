@@ -14,6 +14,20 @@ export default {
   footer: {
     copyright: 'Copyright 2018. small-sunshine all rights reserved.'
   },
+  sidebar: {
+    home: 'Home',
+    introduce: 'Introduce',
+    bot: 'MoriBot',
+    functions: 'Functions',
+    command: '명령어',
+    chatCommand: 'Chat Command',
+    admin: '어드민 기능',
+    inline: 'Inline Query',
+    env: 'Environment',
+    server: '구동 환경',
+    discord: 'Discord',
+    kaorukoBot: 'KaorukoBot'
+  },
   index: {
     hello: '안녕하세요. 모리입니다.',
     telegram: 'MoriBot with Telegram',
