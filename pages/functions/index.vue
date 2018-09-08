@@ -5,31 +5,35 @@ div
   .box
     .media-content
       .content
-        strong 명령어
-        p 모리봇의 명령어를 소개합니다!
+        strong {{ $t('functions.index.command.title') }}
+        hr
+        p {{ $t('functions.index.command.content') }}
         br
-        nuxt-link.button.is-info(to="/functions/commands") 바로가기!
+        nuxt-link.button.is-info(to="/functions/commands") {{ $t('functions.index.go') }}
   .box
     .media-content
       .content
-        strong Chat Command
-        p 모리봇만의 Chat Command를 소개합니다!
+        strong {{ $t('functions.index.chatCommand.title') }}
+        hr
+        p {{ $t('functions.index.chatCommand.content') }}
         br
-        nuxt-link.button.is-info(to="/functions/chat_commands") 바로가기!
+        nuxt-link.button.is-info(to="/functions/chat_commands") {{ $t('functions.index.go') }}
   .box
     .media-content
       .content
-        strong 어드민 기능
-        p 모리봇의 어드민 기능을 소개합니다!
+        strong {{ $t('functions.index.admin.title') }}
+        hr
+        p {{ $t('functions.index.admin.content') }}
         br
-        nuxt-link.button.is-info(to="/functions/admins") 바로가기!
+        nuxt-link.button.is-info(to="/functions/admins") {{ $t('functions.index.go') }}
   .box
     .media-content
       .content
-        strong Inline Query
-        p 모리봇의 Inline Query 기능을 소개합니다!
+        strong {{ $t('functions.index.inline.title') }}
+        hr
+        p {{ $t('functions.index.inline.content') }}
         br
-        nuxt-link.button.is-info(to="/functions/inline") 바로가기!
+        nuxt-link.button.is-info(to="/functions/inline") {{ $t('functions.index.go') }}
 </template>
 
 <script>

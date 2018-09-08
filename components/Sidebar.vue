@@ -26,7 +26,7 @@ aside.menu
         fa-icon(pack="fas" name="terminal")
         | &nbsp; {{ $t('sidebar.command') }}
     li
-      nuxt-link(to="/functions/chat_commands")
+      nuxt-link(to="/functions/chatcommands")
         fa-icon(pack="fas" name="comment")
         | &nbsp; {{ $t('sidebar.chatCommand') }}
     li
