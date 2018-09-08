@@ -71,6 +71,25 @@ export default {
         content: '모리봇의 Inline Query 기능을 소개합니다.'
       },
       go: '바로가기!'
+    },
+    admins: {
+      welcome: {
+        header: '입장메세지를 정할 수 있는 명령어',
+        content: '모리봇의 입장메세지를 정할 수 있는 명령어입니다.'
+      },
+      leave: {
+        header: '퇴장메세지를 정할 수 있는 명령어',
+        content: '모리봇의 퇴장메세지를 정할 수 있는 명령어입니다.'
+      }
+    },
+    chatcommands: {
+
+    },
+    commands: {
+      
+    },
+    inline: {
+
     }
   }
 }

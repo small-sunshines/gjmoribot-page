@@ -8,18 +8,18 @@ div
         p
           strong /welcome
           | &nbsp;
-          small 입장메세지를 정할 수 있는 명령어
+          small {{ $t('functions.admins.welcome.header') }}
         br
-        p 모리봇의 입장메세지를 정할 수 있는 명령어입니다.
+        p {{ $t('functions.admins.welcome.content') }}
   .box
     .media-content
       .content
         p
           strong /leave
           | &nbsp;
-          small 퇴장메세지를 정할 수 있는 명령어
+          small {{ $t('functions.admins.leave.header') }}
         br
-        p 모리봇의 퇴장메세지를 정할 수 있는 명령어입니다.
+        p {{ $t('functions.admins.leave.content') }}
 </template>
 
 <script>

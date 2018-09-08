@@ -71,6 +71,25 @@ export default {
         content: 'Introduces MoriBot\'s Inline Query!'
       },
       go: 'Shortcuts!'
+    },
+    admins: {
+      welcome: {
+        header: 'Commands to set entry messages',
+        content: 'This is a command to set Mori bot\'s welcome message.'
+      },
+      leave: {
+        header: 'Commands to set exit messages',
+        content: 'This is a command to set Mori bot\'s exit message.'
+      }
+    },
+    chatcommands: {
+
+    },
+    commands: {
+      
+    },
+    inline: {
+
     }
   }
 }
