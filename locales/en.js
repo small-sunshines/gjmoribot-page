@@ -32,5 +32,12 @@ export default {
     hello: 'Hello. I am Mori.',
     telegram: 'MoriBot with Telegram',
     git: 'Explore to MoriBot'
+  },
+  kaorukobot: {
+    ababa: '"ABABABABABABABABABABA"',
+    content: [
+      'Kaorukobot is a Discord version of MoriBot and is currently under production.',
+      'The character was Moeta Kaoruko of Comic Girls.'
+    ]
   }
 }

@@ -32,5 +32,12 @@ export default {
     hello: '안녕하세요. 모리입니다.',
     telegram: 'MoriBot with Telegram',
     git: 'Explore to MoriBot'
+  },
+  kaorukobot: {
+    ababa: '"아바바바바바바바바바바"',
+    content: [
+      '카오루코봇은 모리봇의 디스코드 이식판으로, 현재 제작중에 있습니다.',
+      '캐릭터는 코믹 걸즈의 모에타 카오루코로 정하였습니다.'
+    ]
   }
 }
