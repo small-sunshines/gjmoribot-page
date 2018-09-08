@@ -33,6 +33,15 @@ export default {
     telegram: 'MoriBot with Telegram',
     git: 'Explore to MoriBot'
   },
+  introduce: {
+    hello: '안녕하세요. 모리입니다.',
+    content: [
+      '모리봇을 만들자고 결심을 했을 당시, 다른 봇이자주 꺼졌던 것을 계기로 제작되었습니다.',
+      '모리는 GJ부라는 만화에 등장하는 등장인물입니다.',
+      '캐릭터의 저작권은 원작자에게 있습니다.'
+    ],
+    git: 'Explore to MoriBot'
+  },
   running: {
     env: '모리봇 구동환경'
   },

@@ -33,6 +33,15 @@ export default {
     telegram: 'MoriBot with Telegram',
     git: 'Explore to MoriBot'
   },
+  introduce: {
+    hello: 'Hello. I am Mori.',
+    content: [
+      'When I decided to make MoriBot, I was made aware that other bots were often turned off.',
+      'Mori is a character in the japanese manga GJ-Bu.',
+      'The copyright of the character is in the original author.'
+    ],
+    git: 'Explore to MoriBot'
+  },
   running: {
     env: 'MoriBot work environment'
   },

@@ -5,18 +5,17 @@ div
   .content
     figure.image#mainimg
       img.is-rounded(src="~/static/mori2.jpg")
-    h3 안녕하세요. 모리입니다.
+    h3 {{ $t('introduce.hello') }}
     br
-    p 모리봇을 만들자고 결심을 했을 당시, 다른 봇이
-      |  자주 꺼졌던 것을 계기로 제작되었습니다.
+    h6 {{ $t('introduce.content[0]') }}
     br
-    p 모리는 <b>GJ부</b>라는 만화에 등장하는 등장인물입니다.
-    p 캐릭터의 저작권은 원작자에게 있습니다.
+    p {{ $t('introduce.content[1]') }}
+    p {{ $t('introduce.content[2]') }}
     br
     a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/gjmoribot" target="_blank")
       p
         fa-icon(pack="fab", name="git" size="lg")
-        | &nbsp; Explore to MoriBot
+        | &nbsp; {{ $t('introduce.git') }}
 </template>
 
 <style scoped>
