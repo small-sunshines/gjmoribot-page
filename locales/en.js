@@ -150,5 +150,37 @@ export default {
         content: 'This is a command to get help of Inline Command.'
       }
     }
+  },
+  OG: {
+    index: {
+      siteName: 'MoriBot Homepage',
+      desc: '모리봇 홈페이지입니다.'
+    },
+    introduce: {
+
+    },
+    kaorukobot: {
+
+    },
+    running: {
+
+    },
+    functions: {
+      index: {
+
+      },
+      admins: {
+
+      },
+      chatcommands: {
+
+      },
+      commands: {
+
+      },
+      inline: {
+        
+      }
+    }
   }
 }

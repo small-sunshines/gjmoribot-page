@@ -150,5 +150,37 @@ export default {
         content: 'Inline Command의 도움말을 볼 수 있는 명령어입니다.'
       }
     }
+  },
+  OG: {
+    index: {
+      siteName: 'MoriBot Homepage',
+      desc: '모리봇 홈페이지입니다.'
+    },
+    introduce: {
+
+    },
+    kaorukobot: {
+
+    },
+    running: {
+
+    },
+    functions: {
+      index: {
+
+      },
+      admins: {
+
+      },
+      chatcommands: {
+
+      },
+      commands: {
+
+      },
+      inline: {
+        
+      }
+    }
   }
 }

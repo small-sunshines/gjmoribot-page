@@ -42,31 +42,27 @@ a.button.is-git {
 <script>
 import buildmeta from '~/assets/buildmeta'
 
-const title = 'MoriBot'
-const { meta, link } = buildmeta({
-  title,
-  url: 'https://moribot.mori.space/',
-  siteName: 'MoriBot Homepage',
-  desc: '모리봇 홈페이지입니다.',
-  image: null,
-  width: null,
-  height: null,
-  author: 'small_sunshine',
-  twitterCreator: '@jioo0224'
-}, [
-  {hid: 'theme-color', name: 'theme-color', content: '#37AEE2'}
-], null)
-
 export default {
   components: {
     
   },
   head () {
-    return {
+    const title = 'MoriBot'
+    const { meta, link } = buildmeta({
       title,
-      meta,
-      link
-    }
+      url: 'https://moribot.mori.space/',
+      siteName: this.$t('OG.index.siteName'),
+      desc: this.$t('OG.index.desc'),
+      image: null,
+      width: null,
+      height: null,
+      author: 'small_sunshine',
+      twitterCreator: '@jioo0224'
+    }, [
+      {hid: 'theme-color', name: 'theme-color', content: '#37AEE2'}
+    ], null)
+
+    return { title, meta, link }
   }
 }
 </script>
