@@ -83,13 +83,39 @@ export default {
       }
     },
     chatcommands: {
-
+      img: {
+        header: 'Commands to search images mixed with chat',
+        content: 'It is a command to search images in Google that can be mixed with chat.'
+      },
+      search: {
+        header: 'Commands to search Google to mix with chat',
+        content: 'This is a command that you can search on Google that you can mix with chat.'
+      },
+      example: {
+        header: 'Example usage',
+        content: 'So how are you, {img izumi sagiri}?'
+      }
     },
     commands: {
       
     },
     inline: {
-
+      img: {
+        header: 'Commands to search for images',
+        content: 'The command to search for images in Google.'
+      },
+      search: {
+        header: 'Commands to search Google',
+        content: 'The command that allows you to search on Google.'
+      },
+      youtube: {
+        header: 'Search commands on YouTube',
+        content: 'This is a command to search for videos on YouTube.'
+      },
+      help: {
+        header: 'Commands to get help',
+        content: 'This is a command to get help of Inline Command.'
+      }
     }
   }
 }

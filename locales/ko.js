@@ -83,13 +83,39 @@ export default {
       }
     },
     chatcommands: {
-
+      img: {
+        header: '채팅과 섞어 이미지를 검색하는 명령어',
+        content: '채팅과 섞어쓸 수 있는 구글에서 이미지를 검색하는 명령어입니다.'
+      },
+      search: {
+        header: '채팅과 섞어 구글에 검색하는 명령어',
+        content: '채팅과 섞어쓸 수 있는 구글에 검색할 수 있는 명령어입니다.'
+      },
+      example: {
+        header: '사용 예시',
+        content: '그래서 여러분, {짤 이즈미 사기리} 어때요?'
+      }
     },
     commands: {
       
     },
     inline: {
-
+      img: {
+        header: '이미지를 검색하는 명령어',
+        content: '구글에서 이미지를 검색하는 명령어입니다.'
+      },
+      search: {
+        header: '구글에 검색하는 명령어',
+        content: '구글에 검색할 수 있는 명령어입니다.'
+      },
+      youtube: {
+        header: '유튜브에 검색하는 명령어',
+        content: '유튜브에서 동영상을 검색할 수 있는 명령어입니다.'
+      },
+      help: {
+        header: '도움말을 볼 수 있는 명령어',
+        content: 'Inline Command의 도움말을 볼 수 있는 명령어입니다.'
+      }
     }
   }
 }

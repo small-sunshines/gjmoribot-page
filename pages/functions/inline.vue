@@ -7,33 +7,33 @@ div
       p
         strong @gjmoribot img (search keyword)
         | &nbsp;
-        small 이미지를 검색하는 명령어
+        small {{ $t('functions.inline.img.header') }}
       br
-      p 구글에서 이미지를 검색하는 명령어입니다.
+      p {{ $t('functions.inline.img.content') }}
   .box
     .media-content
       p
         strong @gjmoribot search (search keyword)
         | &nbsp;
-        small 구글에 검색하는 명령어
+        small {{ $t('functions.inline.search.header') }}
       br
-      p 구글에 검색할 수 있는 명령어입니다.
+      p {{ $t('functions.inline.search.content') }}
   .box
     .media-content
       p
         strong @gjmoribot youtube (search keyword)
         | &nbsp;
-        small 유튜브에 검색하는 명령어
+        small {{ $t('functions.inline.youtube.header') }}
       br
-      p 유튜브에서 동영상을 검색할 수 있는 명령어입니다.
+      p {{ $t('functions.inline.youtube.content') }}
   .box
     .media-content
       p
         strong @gjmoribot help
         | &nbsp;
-        small 도움말을 볼 수 있는 명령어
+        small {{ $t('functions.inline.help.header') }}
       br
-      p Inline Command의 도움말을 볼 수 있는 명령어입니다.
+      p {{ $t('functions.inline.help.content') }}
 </template>
 
 <script>

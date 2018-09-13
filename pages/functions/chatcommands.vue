@@ -7,17 +7,24 @@ div
       p
         strong {img (search keyword)}
         | &nbsp;
-        small 이미지를 검색하는 명령어
+        small {{ $t('functions.chatcommands.img.header') }}
       br
-      p 구글에서 이미지를 검색하는 명령어입니다.
+      p {{ $t('functions.chatcommands.img.content') }}
   .box
     .media-content
       p
         strong {search (search keyword)}
         | &nbsp;
-        small 구글에 검색하는 명령어
+        small {{ $t('functions.chatcommands.search.header') }}
       br
-      p 구글에 검색할 수 있는 명령어입니다.
+      p {{ $t('functions.chatcommands.search.content') }}
+  .box
+    .media-content
+      p
+        strong {{ $t('functions.chatcommands.example.header') }}
+      br
+      .content
+        blockquote {{ $t('functions.chatcommands.example.content') }}
 </template>
 
 <script>
