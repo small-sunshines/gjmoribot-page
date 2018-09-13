@@ -97,7 +97,40 @@ export default {
       }
     },
     commands: {
-      
+      start: {
+        header: 'Commands to start the bot',
+        content: 'It is a command to write if you first encounter Mori bot.'
+      },
+      help: {
+        header: 'Commands to get help',
+        content: 'You can see the help of commands in MoriBot.'
+      },
+      img: {
+        header: 'Commands to search for images',
+        content: 'The command to search for images in Google.'
+      },
+      google: {
+        header: 'Commands to search Google',
+        content: 'This is a command that you can search on Google.'
+      },
+      uptime: {
+        header: 'Working time to command',
+        content: 'You can check the time that Moribot was activated.'
+      },
+      lang: {
+        header: 'A command to change the language to use',
+        content: 'Change the language used by this bot.'
+      },
+      me: {
+        header: 'Commands to view your information',
+        content: 'It is a command which can see information of oneself.'
+      },
+      whatanime: {
+        header: 'Search for animation to screenshots',
+        content: 'You can find out what animations are in the screenshots of the animation.',
+        api: 'Use of the API Whatanime.ga.',
+        go: 'Shortcuts!'
+      }
     },
     inline: {
       img: {

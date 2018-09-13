@@ -8,69 +8,78 @@ div
         p
           strong /start
           | &nbsp;
-          small 봇을 시작하는 명령어
+          small {{ $t('functions.commands.start.header') }}
+      br
+      p {{ $t('functions.commands.start.content') }}
+  .box
+    .media-content
+      .content
+        p
+          strong /help
+          | &nbsp;
+          small {{ $t('functions.commands.help.header') }}
         br
-        p 모리봇을 사용하실 때 사용하실 명령어입니다. 간단한 도움말이 출력됩니다.
+        p {{ $t('functions.commands.help.content') }}
   .box
     .media-content
-      p
-        strong /help
-        | &nbsp;
-        small 도움말을 볼 수 있는 명령어
-      br
-      p 모리봇에 있는 명령어들의 도움말을 볼 수 있습니다.
+      .content
+        p
+          strong /img
+          | &nbsp;
+          small {{ $t('functions.commands.img.header') }}
+        br
+        p {{ $t('functions.commands.img.content') }}
   .box
     .media-content
-      p
-        strong /img
-        | &nbsp;
-        small 이미지를 검색하는 명령어
-      br
-      p 구글에서 이미지를 검색하는 명령어입니다.
+      .content
+        p
+          strong /google
+          | &nbsp;
+          small {{ $t('functions.commands.google.header') }}
+        br
+        p {{ $t('functions.commands.google.content') }}
   .box
     .media-content
-      p
-        strong /google
-        | &nbsp;
-        small 구글에 검색하는 명령어
-      br
-      p 구글에 검색할 수 있는 명령어입니다.
+      .content
+        p
+          strong /uptime
+          | &nbsp;
+          small {{ $t('functions.commands.uptime.header') }}
+        br
+        p {{ $t('functions.commands.uptime.content') }}
   .box
     .media-content
-      p
-        strong /uptime
-        | &nbsp;
-        small 작동시간 보는 명령어
-      br
-      p 이 봇이 작동된 시간을 확인할 수 있습니다.
+      .content
+        p
+          strong /lang
+          | &nbsp;
+          small {{ $t('functions.commands.lang.header') }}
+        br
+        p {{ $t('functions.commands.lang.content') }}
   .box
     .media-content
-      p
-        strong /lang
-        | &nbsp;
-        small 사용할 언어를 바꾸는 명령어
-      br
-      p 이 봇에서 사용할 언어를 바꿉니다.
+      .content
+        p
+          strong /me
+          | &nbsp;
+          small {{ $t('functions.commands.me.header') }}
+        br
+        p {{ $t('functions.commands.me.content') }}
   .box
     .media-content
-      p
-        strong /me
-        | &nbsp;
-        small 자신의 정보를 보는 명령어들의
-      br
-      p 자신의 정보를 볼 수 있는 명령어입니다.
-  .box
-    .media-content
-      p
-        strong /whatanime
-        | &nbsp;
-        small 스크린샷으로 애니메이션 검색
-      br
-      p 애니메이션의 스크린샷으로 무슨 애니메이션인지 찾아볼 수 있습니다.
-      br
-      p
-        a.button.is-primary(href="https://whatanime.ga/" target="_blank") whatanime.ga
-        | &nbsp; 의 API를 사용합니다.
+      .content
+        p
+          strong /whatanime
+          | &nbsp;
+          small {{ $t('functions.commands.whatanime.header') }}
+        br
+        p {{ $t('functions.commands.whatanime.content') }}
+        br
+        p
+          | {{ $t('functions.commands.whatanime.api') }} &nbsp;
+          a.button.is-primary(href="https://whatanime.ga/" target="_blank")
+            | {{ $t('functions.commands.whatanime.go') }}
+        
 </template>
 
 <script>

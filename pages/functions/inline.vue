@@ -4,36 +4,40 @@ div
   hr
   .box
     .media-content
-      p
-        strong @gjmoribot img (search keyword)
-        | &nbsp;
-        small {{ $t('functions.inline.img.header') }}
-      br
-      p {{ $t('functions.inline.img.content') }}
+      .content
+        p
+          strong @gjmoribot img (search keyword)
+          | &nbsp;
+          small {{ $t('functions.inline.img.header') }}
+        br
+        p {{ $t('functions.inline.img.content') }}
   .box
     .media-content
-      p
-        strong @gjmoribot search (search keyword)
-        | &nbsp;
-        small {{ $t('functions.inline.search.header') }}
-      br
-      p {{ $t('functions.inline.search.content') }}
+      .content
+        p
+          strong @gjmoribot search (search keyword)
+          | &nbsp;
+          small {{ $t('functions.inline.search.header') }}
+        br
+        p {{ $t('functions.inline.search.content') }}
   .box
     .media-content
-      p
-        strong @gjmoribot youtube (search keyword)
-        | &nbsp;
-        small {{ $t('functions.inline.youtube.header') }}
-      br
-      p {{ $t('functions.inline.youtube.content') }}
+      .content
+        p
+          strong @gjmoribot youtube (search keyword)
+          | &nbsp;
+          small {{ $t('functions.inline.youtube.header') }}
+        br
+        p {{ $t('functions.inline.youtube.content') }}
   .box
     .media-content
-      p
-        strong @gjmoribot help
-        | &nbsp;
-        small {{ $t('functions.inline.help.header') }}
-      br
-      p {{ $t('functions.inline.help.content') }}
+      .content
+        p
+          strong @gjmoribot help
+          | &nbsp;
+          small {{ $t('functions.inline.help.header') }}
+        br
+        p {{ $t('functions.inline.help.content') }}
 </template>
 
 <script>

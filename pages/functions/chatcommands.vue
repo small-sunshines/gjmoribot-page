@@ -4,26 +4,28 @@ div
   hr
   .box
     .media-content
-      p
-        strong {img (search keyword)}
-        | &nbsp;
-        small {{ $t('functions.chatcommands.img.header') }}
-      br
-      p {{ $t('functions.chatcommands.img.content') }}
-  .box
-    .media-content
-      p
-        strong {search (search keyword)}
-        | &nbsp;
-        small {{ $t('functions.chatcommands.search.header') }}
-      br
-      p {{ $t('functions.chatcommands.search.content') }}
-  .box
-    .media-content
-      p
-        strong {{ $t('functions.chatcommands.example.header') }}
-      br
       .content
+        p
+          strong {img (search keyword)}
+          | &nbsp;
+          small {{ $t('functions.chatcommands.img.header') }}
+        br
+        p {{ $t('functions.chatcommands.img.content') }}
+  .box
+    .media-content
+      .content
+        p
+          strong {search (search keyword)}
+          | &nbsp;
+          small {{ $t('functions.chatcommands.search.header') }}
+        br
+        p {{ $t('functions.chatcommands.search.content') }}
+  .box
+    .media-content
+      .content
+        p
+          strong {{ $t('functions.chatcommands.example.header') }}
+        br
         blockquote {{ $t('functions.chatcommands.example.content') }}
 </template>
 

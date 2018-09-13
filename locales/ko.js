@@ -97,7 +97,40 @@ export default {
       }
     },
     commands: {
-      
+      start: {
+        header: '봇을 시작하는 명령어',
+        content: '모리봇과 처음 마주하면 쓰는 명령어입니다.'
+      },
+      help: {
+        header: '도움말을 볼 수 있는 명령어',
+        content: '모리봇에 있는 명령어들의 도움말을 볼 수 있습니다.'
+      },
+      img: {
+        header: '이미지를 검색하는 명령어',
+        content: '구글에서 이미지를 검색하는 명령어입니다.'
+      },
+      google: {
+        header: '구글에 검색하는 명령어',
+        content: '구글에 검색할 수 있는 명령어입니다.'
+      },
+      uptime: {
+        header: '작동시간 보는 명령어',
+        content: '모리봇이 작동된 시간을 확인할 수 있습니다.'
+      },
+      lang: {
+        header: '사용할 언어를 바꾸는 명령어',
+        content: '이 봇에서 사용할 언어를 바꿉니다.'
+      },
+      me: {
+        header: '자신의 정보를 보는 명령어',
+        content: '자신의 정보를 볼 수 있는 명령어입니다.'
+      },
+      whatanime: {
+        header: '스크린샷으로 애니메이션 검색',
+        content: '애니메이션의 스크린샷으로 무슨 애니메이션인지 찾아볼 수 있습니다.',
+        api: 'Whatanime.ga의 API를 사용합니다.',
+        go: '바로가기!'
+      }
     },
     inline: {
       img: {
