@@ -49,31 +49,27 @@ a.button.is-git {
 <script>
 import buildmeta from '~/assets/buildmeta'
 
-const title = 'KaorukoBot :: MoriBot'
-const { meta, link } = buildmeta({
-  title,
-  url: 'https://moribot.mori.space/kaorukobot',
-  siteName: 'MoriBot Homepage',
-  desc: '모리봇의 디스코드 이식판, 카오루코봇을 소개하는 페이지입니다.',
-  image: null,
-  width: null,
-  height: null,
-  author: 'small_sunshine',
-  twitterCreator: '@jioo0224'
-}, [
-  {hid: 'theme-color', name: 'theme-color', content: '#7289DA'}
-], null)
-
 export default {
   components: {
     
   },
   head () {
-    return {
+    const title = 'KaorukoBot :: MoriBot'
+    const { meta, link } = buildmeta({
       title,
-      meta,
-      link
-    }
+      url: 'https://moribot.mori.space/kaorukobot',
+      siteName: this.$t('OG.kaorukobot.siteName'),
+      desc: this.$t('OG.kaorukobot.desc'),
+      image: null,
+      width: null,
+      height: null,
+      author: 'small_sunshine',
+      twitterCreator: '@jioo0224'
+    }, [
+      {hid: 'theme-color', name: 'theme-color', content: '#7289DA'}
+    ], null)
+    
+    return { title, meta, link }
   }
 }
 </script>

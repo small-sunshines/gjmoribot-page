@@ -154,32 +154,40 @@ export default {
   OG: {
     index: {
       siteName: 'MoriBot Homepage',
-      desc: '모리봇 홈페이지입니다.'
+      desc: 'Moribot homepage.'
     },
     introduce: {
-
+      siteName: 'Introduce :: MoriBot',
+      desc: 'This page introduces Moribot.'
     },
     kaorukobot: {
-
+      siteName: 'KaorukoBot :: MoriBot',
+      desc: 'This page introduces MoriBot\'s discord transplantation version, Kaorukobot.'
     },
     running: {
-
+      siteName: 'Running :: MoriBot',
+      desc: 'This page introduces MoriBot\'s operating environment.'
     },
     functions: {
       index: {
-
+        siteName: 'Functions :: MoriBot',
+        desc: 'This page introduces MoriBot\'s features.'
       },
       admins: {
-
+        siteName: 'Admins :: Functions :: MoriBot',
+        desc: 'This page introduces MoriBot\'s admin function.'
       },
       chatcommands: {
-
+        siteName: 'ChatCommands :: Functions :: MoriBot',
+        desc: 'This page introduces MoriBot\'s Chat Command function.'
       },
       commands: {
-
+        siteName: 'Commands :: Functions :: MoriBot',
+        desc: 'This page introduces MoriBot\'s commands.'
       },
       inline: {
-        
+        siteName: 'Inline Queries :: Functions :: MoriBot',
+        desc: 'This page introduces MoriBot\'s Inline Query function.'
       }
     }
   }

@@ -157,29 +157,37 @@ export default {
       desc: '모리봇 홈페이지입니다.'
     },
     introduce: {
-
+      siteName: 'Introduce :: MoriBot',
+      desc: '모리봇을 소개하는 페이지입니다.'
     },
     kaorukobot: {
-
+      siteName: 'KaorukoBot :: MoriBot',
+      desc: '모리봇의 디스코드 이식판, 카오루코봇을 소개하는 페이지입니다.'
     },
     running: {
-
+      siteName: 'Running :: MoriBot',
+      desc: '모리봇의 구동환경을 소개하는 페이지입니다.'
     },
     functions: {
       index: {
-
+        siteName: 'Functions :: MoriBot',
+        desc: '모리봇의 기능을 소개하는 페이지입니다.'
       },
       admins: {
-
+        siteName: 'Admins :: Functions :: MoriBot',
+        desc: '모리봇의 어드민 기능을 소개하는 페이지입니다.'
       },
       chatcommands: {
-
+        siteName: 'ChatCommands :: Functions :: MoriBot',
+        desc: '모리봇의 Chat Command 기능을 소개하는 페이지입니다.'
       },
       commands: {
-
+        siteName: 'Commands :: Functions :: MoriBot',
+        desc: '모리봇의 명령어를 소개하는 페이지입니다.'
       },
       inline: {
-        
+        siteName: 'Inline Queries :: Functions :: MoriBot',
+        desc: '모리봇의 Inline Query 기능을 소개하는 페이지입니다.'
       }
     }
   }

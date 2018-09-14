@@ -42,31 +42,27 @@ div
 <script>
 import buildmeta from '~/assets/buildmeta'
 
-const title = 'Running :: MoriBot'
-const { meta, link } = buildmeta({
-  title,
-  url: 'https://moribot.mori.space/running',
-  siteName: 'MoriBot Homepage',
-  desc: '모리봇의 구동환경을 소개하는 페이지입니다.',
-  image: null,
-  width: null,
-  height: null,
-  author: 'small_sunshine',
-  twitterCreator: '@jioo0224'
-}, [
-  {hid: 'theme-color', name: 'theme-color', content: '#37AEE2'}
-], null)
-
 export default {
   components: {
     
   },
   head () {
-    return {
+    const title = 'Running :: MoriBot'
+    const { meta, link } = buildmeta({
       title,
-      meta,
-      link
-    }
+      url: 'https://moribot.mori.space/running',
+      siteName: this.$t('OG.running.siteName'),
+      desc: this.$t('OG.running.desc'),
+      image: null,
+      width: null,
+      height: null,
+      author: 'small_sunshine',
+      twitterCreator: '@jioo0224'
+    }, [
+      {hid: 'theme-color', name: 'theme-color', content: '#37AEE2'}
+    ], null)
+    
+    return { title, meta, link }
   }
 }
 </script>
