@@ -10,7 +10,7 @@ header
         span(aria-hidden="true")
         span(aria-hidden="true")
         span(aria-hidden="true")
-    .navbar-menu(:class="{ 'is-active': showNav }")
+    .navbar-menu(:class="{ 'is-active': showNav }" @click="toggleNav()")
       .navbar-start
         nuxt-link.navbar-item(:to="localePath('index')") 
           fa-icon(pack="fas" name="home")
@@ -58,6 +58,9 @@ header
   .navbar-item img {
     border-radius: 5px;
   }
+  .navbar-brand .navbar-burger span {
+    color: #fff;
+  }
 </style>
 
 <script>
@@ -67,6 +70,11 @@ export default {
   data() {
     return {
       showNav: false
+    }
+  },
+  methods: {
+    toggleNav () {
+      this.showNav = !this.showNav
     }
   }
 }
