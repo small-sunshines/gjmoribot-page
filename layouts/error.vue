@@ -1,5 +1,13 @@
 <template lang="pug">
-p 예상치 못한 에러
+div
+  p.menu-label 404 NOT FOUND
+  hr
+  .content
+    h3 {{ $t('not_found.content') }}
+    br
+    br
+    nuxt-link.button.is-large.is-info(:to="localePath('index')")
+      | {{ $t('not_found.button') }}
 </template>
 
 <script>

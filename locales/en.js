@@ -198,5 +198,9 @@ export default {
         desc: 'This page introduces MoriBot\'s Inline Query function.'
       }
     }
+  },
+  not_found: {
+    content: "There is no page.",
+    button: "Home page!"
   }
 }

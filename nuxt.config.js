@@ -65,7 +65,7 @@ module.exports = {
       lazy: true,
       langDir: 'locales/',
       detectBrowserLanguage: {
-        useCookie: false
+        useCookie: true
       }
     }]
   ],

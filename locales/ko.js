@@ -198,5 +198,9 @@ export default {
         desc: '모리봇의 Inline Query 기능을 소개하는 페이지입니다.'
       }
     }
+  },
+  not_found: {
+    content: "없는 페이지입니다.",
+    button: "홈페이지로!"
   }
 }
