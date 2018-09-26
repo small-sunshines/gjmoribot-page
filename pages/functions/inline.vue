@@ -9,6 +9,10 @@ div
           strong @gjmoribot img (search keyword)
           | &nbsp;
           small {{ $t('functions.inline.img.header') }}
+          | &nbsp;
+          tag(type="master")
+          | &nbsp;
+          tag(type="beta")
         br
         p {{ $t('functions.inline.img.content') }}
   .box
@@ -18,6 +22,10 @@ div
           strong @gjmoribot search (search keyword)
           | &nbsp;
           small {{ $t('functions.inline.search.header') }}
+          | &nbsp;
+          tag(type="master")
+          | &nbsp;
+          tag(type="beta")
         br
         p {{ $t('functions.inline.search.content') }}
   .box
@@ -27,6 +35,10 @@ div
           strong @gjmoribot youtube (search keyword)
           | &nbsp;
           small {{ $t('functions.inline.youtube.header') }}
+          | &nbsp;
+          tag(type="master")
+          | &nbsp;
+          tag(type="beta")
         br
         p {{ $t('functions.inline.youtube.content') }}
   .box
@@ -36,16 +48,21 @@ div
           strong @gjmoribot help
           | &nbsp;
           small {{ $t('functions.inline.help.header') }}
+          | &nbsp;
+          tag(type="master")
+          | &nbsp;
+          tag(type="beta")
         br
         p {{ $t('functions.inline.help.content') }}
 </template>
 
 <script>
 import buildmeta from '~/assets/buildmeta'
+import tag from '~/components/Tag.vue'
 
 export default {
   components: {
-    
+    tag
   },
   head () {
     const title = 'Inline Queries :: Functions :: MoriBot'

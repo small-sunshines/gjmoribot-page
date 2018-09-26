@@ -11,6 +11,18 @@ div
       p
         fa-icon(pack="fab", name="telegram" size="lg")
         | &nbsp; {{ $t('index.telegram') }}
+    span
+      | &nbsp; 
+      tag.is-large(type="master")
+    br
+    br
+    a.button.is-large.is-telegram(href="https://t.me/mori_betabot" target="_blank")
+      p
+        fa-icon(pack="fab", name="telegram" size="lg")
+        | &nbsp; {{ $t('index.telegram') }}
+    span
+      | &nbsp; 
+      tag.is-large(type="beta")
     br
     br
     a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/gjmoribot" target="_blank")
@@ -41,10 +53,11 @@ a.button.is-git {
 
 <script>
 import buildmeta from '~/assets/buildmeta'
+import tag from '~/components/Tag.vue'
 
 export default {
   components: {
-    
+    tag
   },
   head () {
     const title = 'MoriBot'

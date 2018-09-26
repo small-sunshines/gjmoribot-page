@@ -130,6 +130,14 @@ export default {
         content: 'You can find out what animations are in the screenshots of the animation.',
         api: 'Use of the API Whatanime.ga.',
         go: 'Shortcuts!'
+      },
+      msginfo: {
+        header: 'Message Debugging Commands',
+        content: 'You can see the information of the message.'
+      },
+      homepage: {
+        header: 'Go to the homepage!',
+        content: 'You can go to MoriBot\'s homepage.'
       }
     },
     inline: {

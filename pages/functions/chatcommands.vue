@@ -9,6 +9,10 @@ div
           strong {img (search keyword)}
           | &nbsp;
           small {{ $t('functions.chatcommands.img.header') }}
+          | &nbsp;
+          tag(type="master")
+          | &nbsp;
+          tag(type="beta")
         br
         p {{ $t('functions.chatcommands.img.content') }}
   .box
@@ -18,6 +22,10 @@ div
           strong {search (search keyword)}
           | &nbsp;
           small {{ $t('functions.chatcommands.search.header') }}
+          | &nbsp;
+          tag(type="master")
+          | &nbsp;
+          tag(type="beta")
         br
         p {{ $t('functions.chatcommands.search.content') }}
   .box
@@ -31,10 +39,11 @@ div
 
 <script>
 import buildmeta from '~/assets/buildmeta'
+import tag from '~/components/Tag.vue'
 
 export default {
   components: {
-    
+    tag    
   },
   head () {
     const title = 'Chat Commands :: Functions :: MoriBot'

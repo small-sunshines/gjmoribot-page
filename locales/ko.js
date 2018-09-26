@@ -130,6 +130,14 @@ export default {
         content: '애니메이션의 스크린샷으로 무슨 애니메이션인지 찾아볼 수 있습니다.',
         api: 'Whatanime.ga의 API를 사용합니다.',
         go: '바로가기!'
+      },
+      msginfo: {
+        header: '메세지 디버깅 명령어',
+        content: '메세지의 정보를 볼 수 있습니다.'
+      },
+      homepage: {
+        header: '홈페이지로 이동하기!',
+        content: '모리봇의 홈페이지로 이동할 수 있습니다.'
       }
     },
     inline: {

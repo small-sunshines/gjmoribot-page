@@ -9,6 +9,10 @@ div
           strong /welcome
           | &nbsp;
           small {{ $t('functions.admins.welcome.header') }}
+          | &nbsp;
+          tag(type="master")
+          | &nbsp;
+          tag(type="beta")
         br
         p {{ $t('functions.admins.welcome.content') }}
   .box
@@ -18,16 +22,21 @@ div
           strong /leave
           | &nbsp;
           small {{ $t('functions.admins.leave.header') }}
+          | &nbsp;
+          tag(type="master")
+          | &nbsp;
+          tag(type="beta")
         br
         p {{ $t('functions.admins.leave.content') }}
 </template>
 
 <script>
 import buildmeta from '~/assets/buildmeta'
+import tag from '~/components/Tag.vue'
 
 export default {
   components: {
-    
+    tag    
   },
   head () {
     const title = 'Admins :: Functions :: MoriBot'
