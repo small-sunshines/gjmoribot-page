@@ -44,8 +44,8 @@ module.exports = {
     ]
   },
   modules: [
-    /*['@nuxtjs/google-adsense'],
-    ['@nuxtjs/google-analytics'],*/
+    ['@nuxtjs/google-adsense'],
+    ['@nuxtjs/google-analytics'],
     ['@nuxtjs/sitemap'],
     ['qonfucius-nuxt-fontawesome'],
     'nuxt-rfg-icon',
@@ -69,15 +69,15 @@ module.exports = {
       }
     }]
   ],
-  /*'google-adsense': {
+  'google-adsense': {
     id: 'ca-pub-2810659463174293',
-    pageLevelAds: true,
-    analyticsUacct: 'UA-61070671-7',
-    analyticsDomainName: 'mori.space'
+    pageLevelAds: false,
+    analyticsUacct: 'UA-61070671-10',
+    analyticsDomainName: 'moribot.mori.space'
   },
   'google-analytics': {
-    id: 'UA-61070671-7'
-  },*/
+    id: 'UA-61070671-10'
+  },
   sitemap: {
     path: '/sitemap.xml'
   },
