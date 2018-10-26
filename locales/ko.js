@@ -138,6 +138,10 @@ export default {
       homepage: {
         header: '홈페이지로 이동하기!',
         content: '모리봇의 홈페이지로 이동할 수 있습니다.'
+      },
+      weather: {
+        header: '날씨정보 찾아보기!',
+        content: '원하는 지역의 날씨를 찾아볼 수 있습니다.'
       }
     },
     inline: {

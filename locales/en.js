@@ -138,6 +138,10 @@ export default {
       homepage: {
         header: 'Go to the homepage!',
         content: 'You can go to MoriBot\'s homepage.'
+      },
+      weather: {
+        header: 'Browse the weather!',
+        content: 'You can find weather for your area.'
       }
     },
     inline: {

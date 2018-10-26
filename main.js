@@ -16,11 +16,11 @@ const config = {
 try {
   if (process.env.NODE_ENV === 'production') {
     logger.level = 'INFO'
-    nuxtConfig.isDev = false
+    nuxtConfig.dev = false
   } else {
     logger.level = 'DEBUG'
     process.env.NODE_ENV = 'development'
-    nuxtConfig.isDev = true
+    nuxtConfig.dev = true
   }
   logger.info(process.env.NODE_ENV + ' mode')
 
@@ -65,9 +65,12 @@ try {
   const nuxt = new Nuxt(nuxtConfig)
 
   // Build only in dev mode
-  if (nuxtConfig.isDev) {
-    const builder = new Builder(nuxt)
-    builder.build()
+  if (nuxtConfig.dev) {
+    new Builder(nuxt).build()
+      .catch((e) => {
+        logger.error('An error has occurred.')
+        logger.error(e)
+      })
   }
 
   // Give nuxt middleware to express

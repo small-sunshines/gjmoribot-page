@@ -58,7 +58,7 @@ export default {
     Sidebar
   },
   mounted () {
-    document.getElementById("loader-wrapper").style.display = 'none'
+    document.getElementsByClassName("loader-wrapper")[0].style.display = 'none'
   }
 }
 </script>

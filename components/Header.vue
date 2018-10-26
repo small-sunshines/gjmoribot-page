@@ -13,38 +13,38 @@ header
     .navbar-menu(:class="{ 'is-active': showNav }" @click="toggleNav()")
       .navbar-start
         nuxt-link.navbar-item(:to="localePath('index')") 
-          fa-icon(pack="fas" name="home")
+          fa-icon(:icon="['fas', 'home']")
           | &nbsp; {{ $t('header.home') }}
         nuxt-link.navbar-item(:to="localePath('introduce')")
-          fa-icon(pack="fas" name="robot")
+          fa-icon(:icon="['fas', 'robot']")
           | &nbsp; {{ $t('header.moribot') }}
         .navbar-item.has-dropdown.is-hoverable
           a.navbar-link
-            fa-icon(pack="fas" name="wrench")
+            fa-icon(:icon="['fas', 'wrench']")
             | &nbsp; {{ $t('header.functions') }}
           .navbar-dropdown
             nuxt-link.navbar-item(:to="localePath('functions-commands')") 
-              fa-icon(pack="fas" name="terminal")
+              fa-icon(:icon="['fas', 'terminal']")
               | &nbsp; {{ $t('header.commands') }}
             nuxt-link.navbar-item(:to="localePath('functions-chatcommands')")
-              fa-icon(pack="fas" name="comment")
+              fa-icon(:icon="['fas', 'comment']")
               | &nbsp; {{ $t('header.chatcommands') }}
             nuxt-link.navbar-item(:to="localePath('functions-admins')") 
-              fa-icon(pack="fas" name="unlock-alt")
+              fa-icon(:icon="['fas', 'unlock-alt']")
               | &nbsp; {{ $t('header.admins') }}
             nuxt-link.navbar-item(:to="localePath('functions-inline')")
-              fa-icon(pack="fas" name="signal")
+              fa-icon(:icon="['fas', 'signal']")
               | &nbsp; {{ $t('header.inlinequery') }}
         nuxt-link.navbar-item(:to="localePath('running')")
-          fa-icon(pack="fas" name="server")
+          fa-icon(:icon="['fas', 'server']")
           | &nbsp; {{ $t('header.server') }}
         nuxt-link.navbar-item(:to="localePath('kaorukobot')")
-          fa-icon(pack="fab" name="discord")
+          fa-icon(:icon="['fab', 'discord']")
           | &nbsp; {{ $t('header.kaorukobot') }}
       .navbar-end
         .navbar-item.has-dropdown.is-hoverable.is-right
           a.navbar-link
-            fa-icon(pack="fas", name="language")
+            fa-icon(:icon="['fas', 'language']")
             | &nbsp; {{ $t('header.changelang') }}
           .navbar-dropdown
             nuxt-link.navbar-item(:to="switchLocalePath('ko')") 🇰🇷 한국어

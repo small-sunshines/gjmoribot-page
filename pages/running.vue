@@ -8,32 +8,22 @@ div
       tbody
         tr
           td 
-            fa-icon(pack="fas" name="microchip")
+            fa-icon(:icon="['fas', 'microchip']")
             | &nbsp; CPU
-          td Intel i3-2100
+          td Vultr VCPU 1Core
         tr
           td
-            fa-icon(pack="fas" name="memory")
+            fa-icon(:icon="['fas', 'memory']")
             | &nbsp; RAM
-          td DDR3-10600 4GB 1ea, DDR3-12800 4GB 1ea
+          td Vultr VRAM 2GB
         tr
           td
-            fa-icon(pack="fas" name="hdd")
+            fa-icon(:icon="['fas', 'hdd']")
             | &nbsp; SSD
-          td TAMMUZ RX631 64GB
+          td Vultr SSD 25GB
         tr
           td
-            fa-icon(pack="fas" name="hdd")
-            | &nbsp; HDD
-          td MARSHAL MAL21000SA-T54 2.5in 1TB
-        tr
-          td
-            fa-icon(pack="fas" name="plug")
-            | &nbsp; Power
-          td MICRONICS CYCLONE III
-        tr
-          td
-            fa-icon(pack="fab" name="docker")
+            fa-icon(:icon="['fab', 'docker']")
             | &nbsp; Docker
           td Yes
 

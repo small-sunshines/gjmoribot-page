@@ -34,8 +34,6 @@ module.exports = {
       }
       config.output.crossOriginLoading = 'anonymous'
     },
-    vendor: [
-    ],
     plugins: [
       new SriPlugin({
         hashFuncNames: ['sha256', 'sha384'],

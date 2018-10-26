@@ -14,7 +14,7 @@ div
     br
     a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/gjmoribot" target="_blank")
       p
-        fa-icon(pack="fab", name="git" size="lg")
+        fa-icon(:icon="['fab', 'git']" size="lg")
         | &nbsp; {{ $t('introduce.git') }}
 </template>
 

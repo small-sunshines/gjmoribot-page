@@ -137,6 +137,19 @@ div
           tag(type="beta")
         br
         p {{ $t('functions.commands.homepage.content') }}
+  .box
+    .media-content
+      .content
+        p
+          strong /weather
+          | &nbsp;
+          small {{ $t('functions.commands.weather.header') }}
+          | &nbsp;
+          tag(type="master")
+          | &nbsp;
+          tag(type="beta")
+        br
+        p {{ $t('functions.commands.weather.content') }}
         
 </template>
 

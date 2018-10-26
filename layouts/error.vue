@@ -19,6 +19,7 @@ export default {
     Header,
     Footer
   },
+  props: ['error'],
   mounted () {
     document.getElementById("loader-wrapper").style.display = 'none'
   }
