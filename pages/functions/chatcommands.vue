@@ -46,10 +46,10 @@ export default {
     tag    
   },
   head () {
-    const title = 'Chat Commands :: Functions :: MoriBot'
+    const title = 'Chat Commands :: Functions :: KuriyamaBot'
     const { meta, link } = buildmeta({
       title,
-      url: 'https://moribot.mori.space/functions/chat_commands',
+      url: 'https://kuriyama.mori.space/functions/chat_commands',
       siteName: this.$t('OG.introduce.siteName'),
       desc: this.$t('OG.introduce.desc'),
       image: null,

@@ -2,47 +2,44 @@
 div
   p.menu-label admins
   hr
-  .box
-    .media-content
-      .content
-        p
-          strong /welcome
-          | &nbsp;
-          small {{ $t('functions.admins.welcome.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.admins.welcome.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /leave
-          | &nbsp;
-          small {{ $t('functions.admins.leave.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.admins.leave.content') }}
+  Box
+    p(slot="header")
+      strong /welcome
+      | &nbsp;
+      small {{ $t('functions.admins.welcome.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.admins.welcome.content') }}
+  Box
+    p(slot="header")
+      strong /leave
+      | &nbsp;
+      small {{ $t('functions.admins.leave.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.admins.leave.content') }}
 </template>
 
 <script>
 import buildmeta from '~/assets/buildmeta'
-import tag from '~/components/Tag.vue'
+
+import Box from '~/components/Box.vue'
+import Tag from '~/components/Tag.vue'
 
 export default {
   components: {
-    tag    
+    Tag,
+    Box
   },
   head () {
-    const title = 'Admins :: Functions :: MoriBot'
+    const title = 'Admins :: Functions :: KuriyamaBot'
     const { meta, link } = buildmeta({
       title,
-      url: 'https://moribot.mori.space/functions/admins',
+      url: 'https://kuriyama.mori.space/functions/admins',
       siteName: this.$t('OG.introduce.siteName'),
       desc: this.$t('OG.introduce.desc'),
       image: null,

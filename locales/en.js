@@ -1,7 +1,7 @@
 export default {
   header: {
     home: 'Home',
-    moribot: 'MoriBot',
+    kuriyamabot: 'KuriyamaBot',
     functions: 'Functions',
     commands: 'Commands',
     chatcommands: 'Chat Command',
@@ -17,7 +17,7 @@ export default {
   sidebar: {
     home: 'Home',
     introduce: 'Introduce',
-    bot: 'MoriBot',
+    bot: 'KuriyamaBot',
     functions: 'Functions',
     command: 'Command',
     chatCommand: 'Chat Command',
@@ -29,34 +29,37 @@ export default {
     kaorukoBot: 'KaorukoBot'
   },
   index: {
-    hello: 'Hello. I am Mori.',
-    telegram: 'MoriBot with Telegram',
-    git: 'Explore to MoriBot'
+    hello: 'Hello. I am Mirai Kuriyama.',
+    telegram: 'KuriyamaBot with Telegram',
+    git: 'Explore to KuriyamaBot'
   },
   introduce: {
-    hello: 'Hello. I am Mori.',
-    content: [
-      'When I decided to make MoriBot, I was made aware that other bots were often turned off.',
-      'Mori is a character in the japanese manga GJ-Bu.',
-      'The copyright of the character is in the original author.'
-    ],
-    git: 'Explore to MoriBot'
+    content:
+`### Hello. I am Mirai Kuriyama.
+
+**This bot is a new bot made to replace any bot I used.**
+
+Mirai Kuriyama is a character in the japanese manga Kyoukai no Kanata.
+The copyright of the character is in the original author and Kyoto Animation corp.`,
+    git: 'Explore to KuriyamaBot'
   },
   running: {
-    env: 'MoriBot work environment'
+    env: 'KuriyamaBot work environment'
   },
   kaorukobot: {
-    ababa: '"ABABABABABABABABABABA"',
-    content: [
-      'Kaorukobot is a Discord version of MoriBot and is currently under production.',
-      'The character was Moeta Kaoruko of Comic Girls.'
-    ]
+    content:
+`"ABABABABABABABABABABA"
+
+Kaorukobot is a Discord version of KuriyamaBot and is currently under production.
+Moeta Kaoruko is a character in Comic Girls.
+
+The character's copyright is on the original author and Nexus.`
   },
   functions: {
     index: {
       command: {
         title: 'Command',
-        content: 'Introducing Moribot\'s commands!'
+        content: 'Introducing KuriyamaBot\'s commands!'
       },
       chatCommand: {
         title: 'Chat Command',
@@ -64,11 +67,11 @@ export default {
       },
       admin: {
         title: 'Admin Function',
-        content: 'Introducing the admin functions of MoriBot!'
+        content: 'Introducing the admin functions of KuriyamaBot!'
       },
       inline: {
         title: 'Inline Query',
-        content: 'Introduces MoriBot\'s Inline Query!'
+        content: 'Introduces KuriyamaBot\'s Inline Query!'
       },
       go: 'Shortcuts!'
     },
@@ -103,7 +106,7 @@ export default {
       },
       help: {
         header: 'Commands to get help',
-        content: 'You can see the help of commands in MoriBot.'
+        content: 'You can see the help of commands in KuriyamaBot.'
       },
       img: {
         header: 'Commands to search for images',
@@ -115,7 +118,7 @@ export default {
       },
       uptime: {
         header: 'Working time to command',
-        content: 'You can check the time that Moribot was activated.'
+        content: 'You can check the time that KuriyamaBot was activated.'
       },
       lang: {
         header: 'A command to change the language to use',
@@ -137,7 +140,7 @@ export default {
       },
       homepage: {
         header: 'Go to the homepage!',
-        content: 'You can go to MoriBot\'s homepage.'
+        content: 'You can go to KuriyamaBot\'s homepage.'
       },
       weather: {
         header: 'Browse the weather!',
@@ -165,41 +168,41 @@ export default {
   },
   OG: {
     index: {
-      siteName: 'MoriBot Homepage',
-      desc: 'Moribot homepage.'
+      siteName: 'KuriyamaBot Homepage',
+      desc: 'KuriyamaBot homepage.'
     },
     introduce: {
-      siteName: 'Introduce :: MoriBot',
-      desc: 'This page introduces Moribot.'
+      siteName: 'Introduce :: KuriyamaBot',
+      desc: 'This page introduces KuriyamaBot.'
     },
     kaorukobot: {
-      siteName: 'KaorukoBot :: MoriBot',
-      desc: 'This page introduces MoriBot\'s discord transplantation version, Kaorukobot.'
+      siteName: 'KaorukoBot :: KuriyamaBot',
+      desc: 'This page introduces KuriyamaBot\'s discord transplantation version, Kaorukobot.'
     },
     running: {
-      siteName: 'Running :: MoriBot',
-      desc: 'This page introduces MoriBot\'s operating environment.'
+      siteName: 'Running :: KuriyamaBot',
+      desc: 'This page introduces KuriyamaBot\'s operating environment.'
     },
     functions: {
       index: {
-        siteName: 'Functions :: MoriBot',
-        desc: 'This page introduces MoriBot\'s features.'
+        siteName: 'Functions :: KuriyamaBot',
+        desc: 'This page introduces KuriyamaBot\'s features.'
       },
       admins: {
-        siteName: 'Admins :: Functions :: MoriBot',
-        desc: 'This page introduces MoriBot\'s admin function.'
+        siteName: 'Admins :: Functions :: KuriyamaBot',
+        desc: 'This page introduces KuriyamaBot\'s admin function.'
       },
       chatcommands: {
-        siteName: 'ChatCommands :: Functions :: MoriBot',
-        desc: 'This page introduces MoriBot\'s Chat Command function.'
+        siteName: 'ChatCommands :: Functions :: KuriyamaBot',
+        desc: 'This page introduces KuriyamaBot\'s Chat Command function.'
       },
       commands: {
-        siteName: 'Commands :: Functions :: MoriBot',
-        desc: 'This page introduces MoriBot\'s commands.'
+        siteName: 'Commands :: Functions :: KuriyamaBot',
+        desc: 'This page introduces KuriyamaBot\'s commands.'
       },
       inline: {
-        siteName: 'Inline Queries :: Functions :: MoriBot',
-        desc: 'This page introduces MoriBot\'s Inline Query function.'
+        siteName: 'Inline Queries :: Functions :: KuriyamaBot',
+        desc: 'This page introduces KuriyamaBot\'s Inline Query function.'
       }
     }
   },

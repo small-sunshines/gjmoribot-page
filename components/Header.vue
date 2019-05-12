@@ -17,7 +17,7 @@ header
           | &nbsp; {{ $t('header.home') }}
         nuxt-link.navbar-item(:to="localePath('introduce')")
           fa(:icon="['fas', 'robot']")
-          | &nbsp; {{ $t('header.moribot') }}
+          | &nbsp; {{ $t('header.kuriyamabot') }}
         b-dropdown(position="is-bottom-left" aria-role="menu")
           a.navbar-item.is-info(slot="trigger" role="button")
             fa(:icon="['fas', 'wrench']")

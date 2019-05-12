@@ -37,10 +37,10 @@ export default {
     
   },
   head () {
-    const title = 'Running :: MoriBot'
+    const title = 'Running :: KuriyamaBot'
     const { meta, link } = buildmeta({
       title,
-      url: 'https://moribot.mori.space/running',
+      url: 'https://kuriyama.mori.space/running',
       siteName: this.$t('OG.running.siteName'),
       desc: this.$t('OG.running.desc'),
       image: null,

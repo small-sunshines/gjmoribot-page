@@ -3,8 +3,6 @@
     .footer
       .content.has-text-centered.fix-footer
         p {{ $t('footer.copyright') }}
-        a(href="https://bulma.io" target="_blank")
-          img(src="~/static/made-with-bulma.png" alt="Made with Bulma" width="128" height="24")
 </template>
 
 <style>

@@ -4,10 +4,10 @@ div
   hr
   .content
     figure.image#mainimg
-      img.is-rounded(src="~/static/mori1.png")
+      img.is-rounded(src="~/static/kuriyama1.png")
     h3 {{ $t('index.hello') }}
     br
-    a.button.is-large.is-telegram(href="https://t.me/gjmoribot" target="_blank")
+    a.button.is-large.is-telegram(href="https://t.me/kuriyamabot" target="_blank")
       p
         fa(:icon="['fab','telegram']" size="lg")
         | &nbsp; {{ $t('index.telegram') }}
@@ -16,7 +16,7 @@ div
       tag.is-large(type="master")
     br
     br
-    a.button.is-large.is-telegram(href="https://t.me/mori_betabot" target="_blank")
+    a.button.is-large.is-telegram(href="https://t.me/kuriyama_betabot" target="_blank")
       p
         fa(:icon="['fab','telegram']" size="lg")
         | &nbsp; {{ $t('index.telegram') }}
@@ -25,7 +25,16 @@ div
       tag.is-large(type="beta")
     br
     br
-    a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/gjmoribot" target="_blank")
+    a.button.is-large.is-telegram(href="https://t.me/kuriyama_test" target="_blank")
+      p
+        fa(:icon="['fab','telegram']" size="lg")
+        | &nbsp; {{ $t('index.telegram-test') }}
+    span
+      | &nbsp; 
+      tag.is-large(type="beta")
+    br
+    br
+    a.button.is-large.is-git(href="https://github.com/small-sunshines/kuriyamabot" target="_blank")
       p
         fa(:icon="['fab', 'git']" size="lg")
         | &nbsp; {{ $t('index.git') }}
@@ -60,10 +69,10 @@ export default {
     tag
   },
   head () {
-    const title = 'MoriBot'
+    const title = 'KuriyamaBot'
     const { meta, link } = buildmeta({
       title,
-      url: 'https://moribot.mori.space/',
+      url: 'https://kuriyama.mori.space/',
       siteName: this.$t('OG.index.siteName'),
       desc: this.$t('OG.index.desc'),
       image: null,

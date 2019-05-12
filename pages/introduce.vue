@@ -4,15 +4,10 @@ div
   hr
   .content
     figure.image#mainimg
-      img.is-rounded(src="~/static/mori2.jpg")
-    h3 {{ $t('introduce.hello') }}
+      img.is-rounded(src="~/static/kuriyama2.jpg")
+    Vue-markdown {{ $t('introduce.content')}}
     br
-    h6 {{ $t('introduce.content[0]') }}
-    br
-    p {{ $t('introduce.content[1]') }}
-    p {{ $t('introduce.content[2]') }}
-    br
-    a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/gjmoribot" target="_blank")
+    a.button.is-large.is-git(href="https://github.com/small-sunshines/kuriyamabot" target="_blank")
       p
         fa(:icon="['fab', 'git']" size="lg")
         | &nbsp; {{ $t('introduce.git') }}
@@ -32,17 +27,19 @@ a.button.is-git {
 </style>
 
 <script>
+import VueMarkdown from 'vue-markdown'
+
 import buildmeta from '~/assets/buildmeta'
 
 export default {
   components: {
-    
+    VueMarkdown
   },
   head () {
-    const title = 'Introduce :: MoriBot'
+    const title = 'Introduce :: KuriyamaBot'
     const { meta, link } = buildmeta({
       title,
-      url: 'https://moribot.mori.space/introduce',
+      url: 'https://kuriyama.mori.space/introduce',
       siteName: this.$t('OG.introduce.siteName'),
       desc: this.$t('OG.introduce.desc'),
       image: null,

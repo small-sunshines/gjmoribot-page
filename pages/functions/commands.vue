@@ -162,10 +162,10 @@ export default {
     tag
   },
   head () {
-    const title = 'Commands :: Functions :: MoriBot'
+    const title = 'Commands :: Functions :: KuriyamaBot'
     const { meta, link } = buildmeta({
       title,
-      url: 'https://moribot.mori.space/',
+      url: 'https://kuriyama.mori.space/',
       siteName: this.$t('OG.introduce.siteName'),
       desc: this.$t('OG.introduce.desc'),
       image: null,

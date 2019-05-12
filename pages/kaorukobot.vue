@@ -5,10 +5,7 @@ div
   .content
     figure.image#mainimg
       img.is-rounded(src="~/static/kaoruko.jpg")
-    h3 {{ $t('kaorukobot.ababa')}}
-    br
-    p {{ $t('kaorukobot.content[0]') }}
-    p {{ $t('kaorukobot.content[1]') }}
+    vue-markdown {{ $t('kaorukobot.content')}}
     br
     a.button.is-large.is-discord(disabled)
       p
@@ -16,7 +13,7 @@ div
         | &nbsp; KaorukoBot Comming soon!!
     br
     br
-    a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/kaorukoBot" target="_blank")
+    a.button.is-large.is-git(href="https://github.com/small-sunshines/kaorukoBot" target="_blank")
       p
         fa(:icon="['fab', 'git']" size="lg")
         | &nbsp; Explore to KaorukoBot
@@ -47,17 +44,19 @@ a.button.is-git {
 </style>
 
 <script>
+import VueMarkdown from 'vue-markdown'
+
 import buildmeta from '~/assets/buildmeta'
 
 export default {
   components: {
-    
+    VueMarkdown
   },
   head () {
-    const title = 'KaorukoBot :: MoriBot'
+    const title = 'KaorukoBot :: KuriyamaBot'
     const { meta, link } = buildmeta({
       title,
-      url: 'https://moribot.mori.space/kaorukobot',
+      url: 'https://kuriyama.mori.space/kaorukobot',
       siteName: this.$t('OG.kaorukobot.siteName'),
       desc: this.$t('OG.kaorukobot.desc'),
       image: null,
