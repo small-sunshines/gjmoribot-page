@@ -1,16 +1,24 @@
 <template lang="pug">
 header
-  nav.navbar(role="navigation", aria-label="main navigation")
+  nav.navbar.is-info(role="navigation", aria-label="main navigation")
     .navbar-brand
       nuxt-link.navbar-item(:to="localePath('index')")
         img(src="~/static/icon.png")
         p(style="margin-left: 0.5em;") MoriBot
-      a.navbar-burger(role="button" aria-label="menu" aria-expanded="false"
-        @click="showNav = !showNav" :class="{ 'is-active': showNav }")
+      a.navbar-burger(
+        role="button"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbar"
+        @click="display = !display"
+        :class="{ 'is-active': display }"
+      )
         span(aria-hidden="true")
         span(aria-hidden="true")
         span(aria-hidden="true")
-    .navbar-menu(:class="{ 'is-active': showNav }" @click="toggleNav()")
+    .navbar-menu(
+      :class="{ 'is-active': display }"
+    )
       .navbar-start
         nuxt-link.navbar-item(:to="localePath('index')") 
           fa(:icon="['fas', 'home']")
@@ -19,7 +27,7 @@ header
           fa(:icon="['fas', 'robot']")
           | &nbsp; {{ $t('header.kuriyamabot') }}
         b-dropdown(position="is-bottom-left" aria-role="menu" :mobile-modal="true")
-          a.navbar-item(slot="trigger" role="button")
+          a.navbar-item.is-info(slot="trigger" role="button")
             fa(:icon="['fas', 'wrench']")
             span &nbsp; {{ $t('header.functions') }}
             b-icon(icon="menu-down")
@@ -47,7 +55,7 @@ header
           | &nbsp; {{ $t('header.kaorukobot') }}
       .navbar-end
         b-dropdown(position="is-bottom-left" aria-role="menu" :mobile-modal="true")
-          a.navbar-item(slot="trigger" role="button")
+          a.navbar-item.is-info(slot="trigger" role="button")
             fa(:icon="['fas', 'language']")
             span &nbsp; {{ $t('header.changelang') }}
             b-icon(icon="menu-down")
@@ -72,7 +80,6 @@ header
   .navbar.is-info {
     background-color: $telegram;
   }
-
   .navbar-item img {
     border-radius: 5px;
   }
@@ -82,7 +89,6 @@ header
       background-color: $telegram;
       color: #fff;
     }
-
     .navbar-end {
       margin-right: 0.4em;
     }
@@ -95,12 +101,7 @@ header
 export default {
   data() {
     return {
-      showNav: false
-    }
-  },
-  methods: {
-    toggleNav () {
-      this.showNav = !this.showNav
+      display: false
     }
   },
   computed: {

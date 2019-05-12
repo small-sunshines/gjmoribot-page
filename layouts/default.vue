@@ -1,11 +1,11 @@
 <template lang="pug">
 #__main
-  Header
+  Navbar
   .ad
     <!-- moribot-header -->
     adsbygoogle(ad-slot="1034759899")
     p google AD
-  .container
+  .container#contents
     .columns
       aside.column.is-hidden-mobile.is-3.section
         p.menu-label Menu
@@ -71,13 +71,13 @@
 </style>
 
 <script>
-import Header from '~/components/Header.vue'
+import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 import Sidebar from '~/components/Sidebar.vue'
 
 export default {
   components: {
-    Header,
+    Navbar,
     Footer,
     Sidebar
   },
