@@ -18,20 +18,24 @@ header
         nuxt-link.navbar-item(:to="localePath('introduce')")
           fa(:icon="['fas', 'robot']")
           | &nbsp; {{ $t('header.moribot') }}
-        .navbar-item.has-dropdown.is-hoverable
-          a.navbar-link
+        b-dropdown(position="is-bottom-left" aria-role="menu")
+          a.navbar-item.is-info(slot="trigger" role="button")
             fa(:icon="['fas', 'wrench']")
             | &nbsp; {{ $t('header.functions') }}
-          .navbar-dropdown
+            b-icon(icon="menu-down")
+          b-dropdown-item(aria-role="menu-item" custom paddingless)
             nuxt-link.navbar-item(:to="localePath('functions-commands')") 
               fa(:icon="['fas', 'terminal']")
               | &nbsp; {{ $t('header.commands') }}
+          b-dropdown-item(aria-role="menu-item" custom paddingless)
             nuxt-link.navbar-item(:to="localePath('functions-chatcommands')")
               fa(:icon="['fas', 'comment']")
               | &nbsp; {{ $t('header.chatcommands') }}
+          b-dropdown-item(aria-role="menu-item" custom paddingless)
             nuxt-link.navbar-item(:to="localePath('functions-admins')") 
               fa(:icon="['fas', 'unlock-alt']")
               | &nbsp; {{ $t('header.admins') }}
+          b-dropdown-item(aria-role="menu-item" custom paddingless)
             nuxt-link.navbar-item(:to="localePath('functions-inline')")
               fa(:icon="['fas', 'signal']")
               | &nbsp; {{ $t('header.inlinequery') }}
@@ -42,9 +46,8 @@ header
           fa(:icon="['fab', 'discord']")
           | &nbsp; {{ $t('header.kaorukobot') }}
       .navbar-end
-
-      b-dropdown(position="is-bottom-left" aria-role="menu")
-          a.navbar-item(slot="trigger" role="button")
+        b-dropdown(position="is-bottom-left" aria-role="menu")
+          a.navbar-item.is-info(slot="trigger" role="button")
             fa(:icon="['fas', 'language']")
             | &nbsp; {{ $t('header.changelang') }}
             b-icon(icon="menu-down")
@@ -69,6 +72,12 @@ header
   .navbar.is-info {
     background-color: $telegram;
   }
+
+  .navbar-item.is-info {
+    background-color: $telegram;
+    color: #fff;
+  }
+
   .navbar-item img {
     border-radius: 5px;
   }
