@@ -4,47 +4,49 @@ div
   hr
   Box
     p(slot="header")
-      strong @gjmoribot img (search keyword)
+      strong img
       | &nbsp;
       small {{ $t('functions.inline.img.header') }}
       | &nbsp;
       tag(type="master")
       | &nbsp;
       tag(type="beta")
-    p(slot="content") {{ $t('functions.inline.img.content') }}
+    VueMarkdown(slot="content") {{ $t('functions.inline.img.content') }}
   Box
     p(slot="header")
-      strong @gjmoribot search (search keyword)
+      strong search
       | &nbsp;
       small {{ $t('functions.inline.search.header') }}
       | &nbsp;
       tag(type="master")
       | &nbsp;
       tag(type="beta")
-    p(slot="content") {{ $t('functions.inline.search.content') }}
+    VueMarkdown(slot="content") {{ $t('functions.inline.search.content') }}
   Box
     p(slot="header")
-      strong @gjmoribot youtube (search keyword)
+      strong youtube
       | &nbsp;
       small {{ $t('functions.inline.youtube.header') }}
       | &nbsp;
       tag(type="master")
       | &nbsp;
       tag(type="beta")
-    p(slot="content") {{ $t('functions.inline.youtube.content') }}
+    VueMarkdown(slot="content") {{ $t('functions.inline.youtube.content') }}
   Box
     p(slot="header")
-      strong @gjmoribot help
+      strong help
       | &nbsp;
       small {{ $t('functions.inline.help.header') }}
       | &nbsp;
       tag(type="master")
       | &nbsp;
       tag(type="beta")
-    p(slot="content") {{ $t('functions.inline.help.content') }}
+    VueMarkdown(slot="content") {{ $t('functions.inline.help.content') }}
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown'
+
 import buildmeta from '~/assets/buildmeta'
 
 import Box from '~/components/Box.vue'
@@ -52,6 +54,7 @@ import Tag from '~/components/Tag.vue'
 
 export default {
   components: {
+    VueMarkdown,
     Tag,
     Box
   },

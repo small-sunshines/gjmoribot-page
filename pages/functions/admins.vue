@@ -4,27 +4,36 @@ div
   hr
   Box
     p(slot="header")
-      strong /welcome
-      | &nbsp;
+      strong welcome 
       small {{ $t('functions.admins.welcome.header') }}
-      | &nbsp;
+      |  
       tag(type="master")
-      | &nbsp;
+      |  
       tag(type="beta")
-    p(slot="content") {{ $t('functions.admins.welcome.content') }}
+    VueMarkdown(slot="content") {{ $t('functions.admins.welcome.content') }}
   Box
     p(slot="header")
-      strong /leave
-      | &nbsp;
+      strong leave 
       small {{ $t('functions.admins.leave.header') }}
-      | &nbsp;
+      |  
       tag(type="master")
-      | &nbsp;
+      |  
       tag(type="beta")
-    p(slot="content") {{ $t('functions.admins.leave.content') }}
+    VueMarkdown(slot="content") {{ $t('functions.admins.leave.content') }}
+  Box
+    p(slot="header")
+      strong lang 
+      small {{ $t('functions.admins.lang.header') }}
+      |  
+      tag(type="master")
+      |  
+      tag(type="beta")
+    VueMarkdown(slot="content") {{ $t('functions.admins.lang.content') }}
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown'
+
 import buildmeta from '~/assets/buildmeta'
 
 import Box from '~/components/Box.vue'
@@ -32,6 +41,7 @@ import Tag from '~/components/Tag.vue'
 
 export default {
   components: {
+    VueMarkdown,
     Tag,
     Box
   },

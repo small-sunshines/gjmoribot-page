@@ -78,11 +78,67 @@ The character's copyright is on the original author and Nexus.`
     admins: {
       welcome: {
         header: 'Commands to set entry messages',
-        content: 'This is a command to set KuriyamaBot\'s welcome message.'
+        content:
+`
+This is a command to set KuriyamaBot\'s welcome message.
+
+It is a command that can not be used when chatting with bot 1: 1.
+
+In groups and super groups, set the group's entry message. At this time, only the administrator of the group can use this command.
+
+
+##### How to use
+
+\`\`\`
+/welcome Welcome to {roomid}, {userid}!
+\`\`\`
+
+##### Turn Off Message of Entry
+
+\`\`\`
+/welcome off
+\`\`\`
+`
       },
       leave: {
         header: 'Commands to set exit messages',
-        content: 'This is a command to set KuriyamaBot\'s exit message.'
+        content: 
+`
+This is a command to set KuriyamaBot\'s exit message.
+
+It is a command that can not be used when chatting with bot 1: 1.
+
+In groups and super groups, set the group's entry message. At this time, only the administrator of the group can use this command.
+
+##### How to use
+
+\`\`\`
+/leave {userid} has left {roomid}.
+\`\`\`
+
+##### Turn Off Message of Leave
+
+\`\`\`
+/leave off
+\`\`\`
+`
+      },
+      lang: {
+        header: 'Commands that can set the bot\'s language',
+        content:
+`
+It is a command that can set the language of Kuriyama bot.
+
+Set your own language when speaking 1: 1 with the bot.
+
+In groups and super groups, set the language of the group. At this time, only the administrator of the group can write the command.
+
+##### How to use
+
+\`\`\`
+/lang
+\`\`\`
+`
       }
     },
     chatcommands: {
@@ -116,67 +172,233 @@ This is a searchable command to Google that can be mixed with chat.
     commands: {
       start: {
         header: 'Commands to start the bot',
-        content: 'It is a command to write if you first encounter KuriyamaBot.'
+        content: 
+`
+It is a command to write if you first encounter KuriyamaBot.
+
+##### How to use
+
+\`\`\`
+/start
+\`\`\`
+`
       },
       help: {
         header: 'Commands to get help',
-        content: 'You can see the help of commands in KuriyamaBot.'
+        content: 
+`
+You can see the help of commands in KuriyamaBot.
+
+##### How to use
+
+\`\`\`
+/help
+\`\`\`
+`
       },
       img: {
         header: 'Commands to search for images',
-        content: 'The command to search for images in Google.'
+        content: 
+`
+The command to search for images in Google.
+
+##### How to use
+
+\`\`\`
+/img Event Horizon
+\`\`\`
+`
       },
       google: {
         header: 'Commands to search Google',
-        content: 'This is a command that you can search on Google.'
+        content: 
+`
+This is a command that you can search on Google.
+
+##### How to use
+
+\`\`\`
+/search Vue.js
+\`\`\`
+`
       },
       uptime: {
         header: 'Working time to command',
-        content: 'You can check the time that KuriyamaBot was activated.'
+        content: 
+`
+You can check the time that KuriyamaBot was activated.
+
+##### How to use
+
+\`\`\`
+/uptime
+\`\`\`
+`
       },
       lang: {
         header: 'A command to change the language to use',
-        content: 'Change the language used by this bot.'
+        content: 
+`
+Change the language used by this bot.
+
+##### How to use
+
+\`\`\`
+/lang
+\`\`\`
+`
       },
       me: {
         header: 'Commands to view your information',
-        content: 'It is a command which can see information of oneself.'
+        content: 
+`
+It is a command which can see information of oneself.
+
+##### How to use
+
+\`\`\`
+/me
+\`\`\`
+`
       },
       whatanime: {
         header: 'Search for animation to screenshots',
-        content: 'You can find out what animations are in the screenshots of the animation.',
-        api: 'Use of the API Whatanime.ga.',
-        go: 'Shortcuts!'
+        content: 
+`
+You can find out what animations are in the screenshots of the animation.
+Use of the API [trace.moe](https://trace.moe/).
+
+##### How to use
+
+\`\`\`
+/whatanime
+\`\`\`
+`
       },
       msginfo: {
         header: 'Message Debugging Commands',
-        content: 'You can see the information of the message.'
+        content: 
+`
+You can see the information of the message.
+
+##### How to use
+
+\`\`\`
+/msginfo
+\`\`\`
+`
       },
       homepage: {
         header: 'Go to the homepage!',
-        content: 'You can go to KuriyamaBot\'s homepage.'
+        content: 
+`
+You can go to KuriyamaBot\'s homepage.
+
+##### How to use
+
+\`\`\`
+/homepage
+\`\`\`
+`
       },
       weather: {
         header: 'Browse the weather!',
-        content: 'You can find weather for your area.'
+        content: 
+`
+You can find weather for your area.
+
+##### How to use
+
+\`\`\`
+/weather
+\`\`\`
+
+\`\`\`
+/weather Washington D.C.
+\`\`\`
+`
       }
     },
     inline: {
       img: {
         header: 'Commands to search for images',
-        content: 'The command to search for images in Google.'
+        content: 
+`
+The command to search for images in Google.
+
+##### How to use
+
+\`\`\`
+@kuriyamabot img Event Horizon
+\`\`\`
+`
       },
       search: {
         header: 'Commands to search Google',
-        content: 'The command that allows you to search on Google.'
+        content: 
+`
+The command to search for keyword in Google.
+
+##### How to use
+
+\`\`\`
+@kuriyamabot search Vue.js
+\`\`\`
+`
       },
       youtube: {
         header: 'Search commands on YouTube',
-        content: 'This is a command to search for videos on YouTube.'
+        content: 
+`
+This is a command to search for videos on YouTube.
+
+##### How to use
+
+\`\`\`
+@kuriyamabot youtube Rainbow Six Siege
+\`\`\`
+`
       },
       help: {
         header: 'Commands to get help',
-        content: 'This is a command to get help of Inline Command.'
+        content: 
+`
+This is a command to get help of Inline Command.
+
+##### How to use
+
+\`\`\`
+@kuriyamabot help
+\`\`\`
+`
+      },
+      calculate: {
+        header: 'Calculations in an instant?',
+        content:
+`
+You can calculate the formula you want.
+
+
+##### How to use
+
+\`\`\`
+/calc 1/sin(pi/2)
+\`\`\`
+`
+      },
+      translate: {
+        header: 'A command to translate the desired message',
+        content: 
+`
+You can translate any message or phrase you want.
+
+
+##### How to use
+
+\`\`\`
+/tr Welcome|ko
+\`\`\`
+`
       }
     }
   },
