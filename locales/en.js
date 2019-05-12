@@ -30,8 +30,9 @@ export default {
   },
   index: {
     hello: 'Hello. I am Mirai Kuriyama.',
-    telegram: 'KuriyamaBot with Telegram',
-    git: 'Explore to KuriyamaBot'
+    telegram: 'KuriyamaBot',
+    telegramTest: 'Beta Test',
+    git: 'KuriyamaBot'
   },
   introduce: {
     content:

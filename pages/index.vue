@@ -28,7 +28,7 @@ div
     a.button.is-large.is-telegram(href="https://t.me/kuriyama_test" target="_blank")
       p
         fa(:icon="['fab','telegram']" size="lg")
-        | &nbsp; {{ $t('index.telegram-test') }}
+        | &nbsp; {{ $t('index.telegramTest') }}
     span
       | &nbsp; 
       tag.is-large(type="beta")

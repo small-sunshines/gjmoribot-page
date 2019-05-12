@@ -20,30 +20,54 @@
   Footer
 </template>
 
-<style>
-/* https://github.com/jgthms/bulma/issues/449#issuecomment-406454327 */
-@media screen and (max-width: 1024px) {
-  .columns {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
+<style lang="scss">
+  // Import Bulma's core
+  @import "~bulma/sass/utilities/_all";
 
-div.ad {
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
-    width: 100%;
-    min-height: 60px;
-    position: relative;
-}
-div.ad p {
-    font-size: 0.8em;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: 4em;
-}
+  // Set your colors
+  $primary: hsl(171, 100%, 41%);
+  $primary-invert: findColorInvert($primary);
+  $twitter: #4099FF;
+  $twitter-invert: findColorInvert($twitter);
+
+  // Setup $colors to use as bulma classes (e.g. 'is-twitter')
+  $colors: (
+      "white": ($white, $black),
+      "black": ($black, $white),
+      "light": ($light, $light-invert),
+      "dark": ($dark, $dark-invert),
+      "primary": ($primary, $primary-invert),
+      "info": ($info, $info-invert),
+      "success": ($success, $success-invert),
+      "warning": ($warning, $warning-invert),
+      "danger": ($danger, $danger-invert),
+      "twitter": ($twitter, $twitter-invert)
+  );
+
+  // Links
+  $link: $primary;
+  $link-invert: $primary-invert;
+  $link-focus-border: $primary;
+
+  // Import Bulma and Buefy styles
+  @import "~bulma";
+  @import "~buefy/src/scss/buefy";
+  
+  div.ad {
+      margin-top: 0.8em;
+      margin-bottom: 0.8em;
+      width: 100%;
+      min-height: 60px;
+      position: relative;
+  }
+  div.ad p {
+      font-size: 0.8em;
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 4em;
+  }
 </style>
 
 <script>

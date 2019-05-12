@@ -1,6 +1,6 @@
 <template lang="pug">
 header
-  nav.navbar.is-info(role="navigation", aria-label="main navigation")
+  nav.navbar(role="navigation", aria-label="main navigation")
     .navbar-brand
       nuxt-link.navbar-item(:to="localePath('index')")
         img(src="~/static/icon.png")
@@ -18,27 +18,27 @@ header
         nuxt-link.navbar-item(:to="localePath('introduce')")
           fa(:icon="['fas', 'robot']")
           | &nbsp; {{ $t('header.kuriyamabot') }}
-        b-dropdown(position="is-bottom-left" aria-role="menu")
-          a.navbar-item.is-info(slot="trigger" role="button")
+        b-dropdown(position="is-bottom-left" aria-role="menu" :mobile-modal="true")
+          a.navbar-item(slot="trigger" role="button")
             fa(:icon="['fas', 'wrench']")
-            | &nbsp; {{ $t('header.functions') }}
+            span &nbsp; {{ $t('header.functions') }}
             b-icon(icon="menu-down")
           b-dropdown-item(aria-role="menu-item" custom paddingless)
             nuxt-link.navbar-item(:to="localePath('functions-commands')") 
               fa(:icon="['fas', 'terminal']")
-              | &nbsp; {{ $t('header.commands') }}
+              span &nbsp; {{ $t('header.commands') }}
           b-dropdown-item(aria-role="menu-item" custom paddingless)
             nuxt-link.navbar-item(:to="localePath('functions-chatcommands')")
               fa(:icon="['fas', 'comment']")
-              | &nbsp; {{ $t('header.chatcommands') }}
+              span &nbsp; {{ $t('header.chatcommands') }}
           b-dropdown-item(aria-role="menu-item" custom paddingless)
             nuxt-link.navbar-item(:to="localePath('functions-admins')") 
               fa(:icon="['fas', 'unlock-alt']")
-              | &nbsp; {{ $t('header.admins') }}
+              span &nbsp; {{ $t('header.admins') }}
           b-dropdown-item(aria-role="menu-item" custom paddingless)
             nuxt-link.navbar-item(:to="localePath('functions-inline')")
               fa(:icon="['fas', 'signal']")
-              | &nbsp; {{ $t('header.inlinequery') }}
+              span &nbsp; {{ $t('header.inlinequery') }}
         nuxt-link.navbar-item(:to="localePath('running')")
           fa(:icon="['fas', 'server']")
           | &nbsp; {{ $t('header.server') }}
@@ -46,10 +46,10 @@ header
           fa(:icon="['fab', 'discord']")
           | &nbsp; {{ $t('header.kaorukobot') }}
       .navbar-end
-        b-dropdown(position="is-bottom-left" aria-role="menu")
-          a.navbar-item.is-info(slot="trigger" role="button")
+        b-dropdown(position="is-bottom-left" aria-role="menu" :mobile-modal="true")
+          a.navbar-item(slot="trigger" role="button")
             fa(:icon="['fas', 'language']")
-            | &nbsp; {{ $t('header.changelang') }}
+            span &nbsp; {{ $t('header.changelang') }}
             b-icon(icon="menu-down")
           b-dropdown-item(
             aria-role="menu-item"
@@ -73,19 +73,16 @@ header
     background-color: $telegram;
   }
 
-  .navbar-item.is-info {
-    background-color: $telegram;
-    color: #fff;
-  }
-
   .navbar-item img {
     border-radius: 5px;
   }
-  .navbar-brand .navbar-burger span {
-    color: #fff;
-  }
 
   @media screen and (min-width: 1088px) {
+    .navbar-item.is-info {
+      background-color: $telegram;
+      color: #fff;
+    }
+
     .navbar-end {
       margin-right: 0.4em;
     }
