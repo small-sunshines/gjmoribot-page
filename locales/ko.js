@@ -1,5 +1,6 @@
 export default {
   header: {
+    brands: 'KuriyamaBot',
     home: 'Home',
     kuriyamabot: 'KuriyamaBot',
     functions: '기능들',
