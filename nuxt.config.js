@@ -1,6 +1,3 @@
-const webpack = require('webpack')
-const SriPlugin = require('webpack-subresource-integrity')
-
 module.exports = {
   /*
   ** Headers of the page
@@ -15,11 +12,6 @@ module.exports = {
     middleware: ['ssr-cookie']
   },
   build: {
-    postcss: {
-      plugins: {
-        'postcss-custom-properties': false
-      }
-    },
     /*
     ** Run ESLint on save
     */
@@ -32,32 +24,46 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-      config.output.crossOriginLoading = 'anonymous'
-    },
-    plugins: [
-      new SriPlugin({
-        hashFuncNames: ['sha256', 'sha384'],
-        enabled: true
-      })
-    ]
+    }
   },
   modules: [
-    ['@nuxtjs/google-adsense'],
-    ['@nuxtjs/google-analytics'],
-    ['@nuxtjs/sitemap'],
-    ['qonfucius-nuxt-fontawesome'],
+    '@nuxtjs/google-adsense',
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/sitemap',
+    ['nuxt-fontawesome', {
+      component: 'fa',
+      imports: [
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: [
+            'faTelegram', 'faDiscord',
+            'faGit', 'faDocker'
+          ]
+        }, {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: [
+            'faLanguage', 'faHome', 'faWrench', 'faRobot',
+            'faTerminal', 'faComment', 'faUnlockAlt', 'faSignal',
+            'faServer', 'faMicrochip', 'faMemory', 'faHdd',
+            'faPlug'
+          ]
+        }
+      ]
+    }],
     'nuxt-rfg-icon',
-    '@nuxtjs/bulma',
+    'nuxt-buefy',
     ['nuxt-i18n', {
       locales: [
         {
           code: 'ko',
           iso: 'ko-KR',
-          file: 'ko.js'
+          file: 'ko.js',
+          name: '🇰🇷 한국어'
         }, {
           code: 'en',
           iso: 'en-US',
-          file: 'en.js'
+          file: 'en.js',
+          name: '🇺🇸 English'
         }],
       defaultLocale: 'ko',
       lazy: true,
@@ -71,7 +77,7 @@ module.exports = {
     id: 'ca-pub-2810659463174293',
     pageLevelAds: false,
     analyticsUacct: 'UA-61070671-10',
-    analyticsDomainName: 'moribot.mori.space'
+    analyticsDomainName: 'kuriyama.mori.space'
   },
   'google-analytics': {
     id: 'UA-61070671-10'
@@ -79,35 +85,9 @@ module.exports = {
   sitemap: {
     path: '/sitemap.xml'
   },
-  fontAwesome: {
-    packs: [
-      {
-        package: '@fortawesome/fontawesome-free-brands',
-        icons: ['faTelegram', 'faDiscord',
-          'faGit', 'faDocker']
-      }, {
-        package: '@fortawesome/fontawesome-free-solid',
-        icons: ['faLanguage', 'faHome', 'faWrench', 'faRobot',
-          'faTerminal', 'faComment', 'faUnlockAlt', 'faSignal',
-          'faServer', 'faMicrochip', 'faMemory', 'faHdd',
-          'faPlug']
-      }
-    ]
-  },
   'rfg-icon': {
     static: true,
     staticPath: '/_favicons/',
     masterPicture: 'static/icon.png'
-  },
-  render: {
-    /*csp: {
-      enabled: true,
-      hashAlgorithm: 'sha256',
-      allowedSources: ['pagead2.googlesyndication.com', 'www.google-analytics.com',
-        'ajax.cloudflare.com', 'adservice.google.co.kr', 'adservice.google.com'],
-      policies: {
-        'font-src': "'self'"
-      }
-    }*/
   }
 }

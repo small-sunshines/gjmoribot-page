@@ -8,22 +8,22 @@ div
       tbody
         tr
           td 
-            fa-icon(:icon="['fas', 'microchip']")
+            fa(:icon="['fas', 'microchip']")
             | &nbsp; CPU
           td Vultr VCPU 1Core
         tr
           td
-            fa-icon(:icon="['fas', 'memory']")
+            fa(:icon="['fas', 'memory']")
             | &nbsp; RAM
-          td Vultr VRAM 2GB
+          td Vultr VRAM 1GB
         tr
           td
-            fa-icon(:icon="['fas', 'hdd']")
+            fa(:icon="['fas', 'hdd']")
             | &nbsp; SSD
           td Vultr SSD 25GB
         tr
           td
-            fa-icon(:icon="['fab', 'docker']")
+            fa(:icon="['fab', 'docker']")
             | &nbsp; Docker
           td Yes
 

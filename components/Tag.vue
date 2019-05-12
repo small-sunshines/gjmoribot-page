@@ -1,5 +1,5 @@
 <template lang="pug">
-  span.tag(:class="className") {{ message }}
+  span.tag(:class="classes") {{ message }}
 </template>
 
 <script>
@@ -9,13 +9,13 @@ export default {
     switch (this.type) {
       case 'beta':
         return {
-          className: 'is-info',
+          classes: 'has-background-info has-text-white',
           message: 'Beta'
         }
         break
       case 'master':
         return {
-          className: 'is-primary',
+          classes: 'has-background-success has-text-white',
           message: 'Master'
         }
         break

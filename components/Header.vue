@@ -13,53 +13,73 @@ header
     .navbar-menu(:class="{ 'is-active': showNav }" @click="toggleNav()")
       .navbar-start
         nuxt-link.navbar-item(:to="localePath('index')") 
-          fa-icon(:icon="['fas', 'home']")
+          fa(:icon="['fas', 'home']")
           | &nbsp; {{ $t('header.home') }}
         nuxt-link.navbar-item(:to="localePath('introduce')")
-          fa-icon(:icon="['fas', 'robot']")
+          fa(:icon="['fas', 'robot']")
           | &nbsp; {{ $t('header.moribot') }}
         .navbar-item.has-dropdown.is-hoverable
           a.navbar-link
-            fa-icon(:icon="['fas', 'wrench']")
+            fa(:icon="['fas', 'wrench']")
             | &nbsp; {{ $t('header.functions') }}
           .navbar-dropdown
             nuxt-link.navbar-item(:to="localePath('functions-commands')") 
-              fa-icon(:icon="['fas', 'terminal']")
+              fa(:icon="['fas', 'terminal']")
               | &nbsp; {{ $t('header.commands') }}
             nuxt-link.navbar-item(:to="localePath('functions-chatcommands')")
-              fa-icon(:icon="['fas', 'comment']")
+              fa(:icon="['fas', 'comment']")
               | &nbsp; {{ $t('header.chatcommands') }}
             nuxt-link.navbar-item(:to="localePath('functions-admins')") 
-              fa-icon(:icon="['fas', 'unlock-alt']")
+              fa(:icon="['fas', 'unlock-alt']")
               | &nbsp; {{ $t('header.admins') }}
             nuxt-link.navbar-item(:to="localePath('functions-inline')")
-              fa-icon(:icon="['fas', 'signal']")
+              fa(:icon="['fas', 'signal']")
               | &nbsp; {{ $t('header.inlinequery') }}
         nuxt-link.navbar-item(:to="localePath('running')")
-          fa-icon(:icon="['fas', 'server']")
+          fa(:icon="['fas', 'server']")
           | &nbsp; {{ $t('header.server') }}
         nuxt-link.navbar-item(:to="localePath('kaorukobot')")
-          fa-icon(:icon="['fab', 'discord']")
+          fa(:icon="['fab', 'discord']")
           | &nbsp; {{ $t('header.kaorukobot') }}
       .navbar-end
-        .navbar-item.has-dropdown.is-hoverable.is-right
-          a.navbar-link
-            fa-icon(:icon="['fas', 'language']")
+
+      b-dropdown(position="is-bottom-left" aria-role="menu")
+          a.navbar-item(slot="trigger" role="button")
+            fa(:icon="['fas', 'language']")
             | &nbsp; {{ $t('header.changelang') }}
-          .navbar-dropdown
-            nuxt-link.navbar-item(:to="switchLocalePath('ko')") 🇰🇷 한국어
-            nuxt-link.navbar-item(:to="switchLocalePath('en')") 🇺🇸 English
+            b-icon(icon="menu-down")
+          b-dropdown-item(
+            aria-role="menu-item"
+            custom
+            paddingless
+            v-for="locale in availableLocales"
+            :key="locale.code"
+          )
+            nuxt-link.navbar-item(
+              :to="switchLocalePath(locale.code)"
+            ) {{ locale.name }}
             // nuxt-link.navbar-item(:to="switchLocalePath('jp')") 🇯🇵 日本語
             // nuxt-link.navbar-item(:to="switchLocalePath('cn')") 🇨🇳 中国
             // nuxt-link.navbar-item(:to="switchLocalePath('ru')") 🇷🇺 русский
 </template> 
 
-<style scoped>
+<style scoped lang='scss'>
+  $telegram: #37AEE2;
+
+  .navbar.is-info {
+    background-color: $telegram;
+  }
   .navbar-item img {
     border-radius: 5px;
   }
   .navbar-brand .navbar-burger span {
     color: #fff;
+  }
+
+  @media screen and (min-width: 1088px) {
+    .navbar-end {
+      margin-right: 0.4em;
+    }
   }
 </style>
 
@@ -75,6 +95,11 @@ export default {
   methods: {
     toggleNav () {
       this.showNav = !this.showNav
+    }
+  },
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     }
   }
 }

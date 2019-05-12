@@ -9,7 +9,7 @@ div
     br
     a.button.is-large.is-telegram(href="https://t.me/gjmoribot" target="_blank")
       p
-        fa-icon(:icon="['fab','telegram']" size="lg")
+        fa(:icon="['fab','telegram']" size="lg")
         | &nbsp; {{ $t('index.telegram') }}
     span
       | &nbsp; 
@@ -18,7 +18,7 @@ div
     br
     a.button.is-large.is-telegram(href="https://t.me/mori_betabot" target="_blank")
       p
-        fa-icon(:icon="['fab','telegram']" size="lg")
+        fa(:icon="['fab','telegram']" size="lg")
         | &nbsp; {{ $t('index.telegram') }}
     span
       | &nbsp; 
@@ -27,7 +27,7 @@ div
     br
     a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/gjmoribot" target="_blank")
       p
-        fa-icon(:icon="['fab', 'git']" size="lg")
+        fa(:icon="['fab', 'git']" size="lg")
         | &nbsp; {{ $t('index.git') }}
 </template>
 

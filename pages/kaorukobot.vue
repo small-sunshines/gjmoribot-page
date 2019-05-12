@@ -12,13 +12,13 @@ div
     br
     a.button.is-large.is-discord(disabled)
       p
-        fa-icon(:icon="['fab', 'discord']" size="lg")
+        fa(:icon="['fab', 'discord']" size="lg")
         | &nbsp; KaorukoBot Comming soon!!
     br
     br
     a.button.is-large.is-git(href="https://git.mori.space/small-sunshine/kaorukoBot" target="_blank")
       p
-        fa-icon(:icon="['fab', 'git']" size="lg")
+        fa(:icon="['fab', 'git']" size="lg")
         | &nbsp; Explore to KaorukoBot
     
 </template>
