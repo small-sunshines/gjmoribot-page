@@ -4,7 +4,7 @@ header
     .navbar-brand
       nuxt-link.navbar-item(:to="localePath('index')")
         img(src="~/static/icon.png")
-        p(style="margin-left: 0.5em;") MoriBot
+        p(style="margin-left: 0.5em;") {{ $t('header.brands') }}
       a.navbar-burger(
         role="button"
         aria-label="menu"
