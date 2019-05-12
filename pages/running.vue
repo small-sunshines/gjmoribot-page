@@ -37,7 +37,7 @@ export default {
     
   },
   head () {
-    const title = 'Running :: KuriyamaBot'
+    const title = this.$t('OG.running.siteName')
     const { meta, link } = buildmeta({
       title,
       url: 'https://kuriyama.mori.space/running',

@@ -2,51 +2,42 @@
 div
   p.menu-label chat commands
   hr
-  .box
-    .media-content
-      .content
-        p
-          strong {img (search keyword)}
-          | &nbsp;
-          small {{ $t('functions.chatcommands.img.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.chatcommands.img.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong {search (search keyword)}
-          | &nbsp;
-          small {{ $t('functions.chatcommands.search.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.chatcommands.search.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong {{ $t('functions.chatcommands.example.header') }}
-        br
-        blockquote {{ $t('functions.chatcommands.example.content') }}
+  Box
+    span(slot="header")
+      strong img 
+      span {{ $t('functions.chatcommands.img.header') }}
+      |  
+      tag(type="master")
+      |  
+      tag(type="beta")
+    VueMarkdown(slot="content") {{ $t('functions.chatcommands.img.content') }}
+  Box
+    span(slot="header")
+      strong search 
+      span {{ $t('functions.chatcommands.search.header') }}
+      |  
+      tag(type="master")
+      |  
+      tag(type="beta")
+    VueMarkdown(slot="content") {{ $t('functions.chatcommands.search.content') }}
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown'
+
 import buildmeta from '~/assets/buildmeta'
-import tag from '~/components/Tag.vue'
+
+import Box from '~/components/Box.vue'
+import Tag from '~/components/Tag.vue'
 
 export default {
   components: {
-    tag    
+    VueMarkdown,
+    Tag,
+    Box
   },
   head () {
-    const title = 'Chat Commands :: Functions :: KuriyamaBot'
+    const title = this.$t('OG.introduce.siteName')
     const { meta, link } = buildmeta({
       title,
       url: 'https://kuriyama.mori.space/functions/chat_commands',

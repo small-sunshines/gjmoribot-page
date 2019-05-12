@@ -53,7 +53,7 @@ export default {
     VueMarkdown
   },
   head () {
-    const title = 'KaorukoBot :: KuriyamaBot'
+    const title = this.$t('OG.kaorukobot.siteName')
     const { meta, link } = buildmeta({
       title,
       url: 'https://kuriyama.mori.space/kaorukobot',

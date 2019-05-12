@@ -63,7 +63,7 @@ The character's copyright is on the original author and Nexus.`
       },
       chatCommand: {
         title: 'Chat Command',
-        content: 'Introducing Mori bot only Chat Command!'
+        content: 'Introducing KuriyamaBot only Chat Command!'
       },
       admin: {
         title: 'Admin Function',
@@ -78,31 +78,45 @@ The character's copyright is on the original author and Nexus.`
     admins: {
       welcome: {
         header: 'Commands to set entry messages',
-        content: 'This is a command to set Mori bot\'s welcome message.'
+        content: 'This is a command to set KuriyamaBot\'s welcome message.'
       },
       leave: {
         header: 'Commands to set exit messages',
-        content: 'This is a command to set Mori bot\'s exit message.'
+        content: 'This is a command to set KuriyamaBot\'s exit message.'
       }
     },
     chatcommands: {
       img: {
         header: 'Commands to search images mixed with chat',
-        content: 'It is a command to search images in Google that can be mixed with chat.'
+        content: 
+`
+It is a command to search images in Google that can be mixed with chat.
+
+##### How to use
+
+\`\`\`
+{img ReLU}
+\`\`\`
+`
       },
       search: {
         header: 'Commands to search Google to mix with chat',
-        content: 'This is a command that you can search on Google that you can mix with chat.'
-      },
-      example: {
-        header: 'Example usage',
-        content: 'So how are you, {img izumi sagiri}?'
+        content: 
+`
+This is a searchable command to Google that can be mixed with chat.
+
+##### How to use
+
+\`\`\`
+{search Krebs Circuit}
+\`\`\`
+`
       }
     },
     commands: {
       start: {
         header: 'Commands to start the bot',
-        content: 'It is a command to write if you first encounter Mori bot.'
+        content: 'It is a command to write if you first encounter KuriyamaBot.'
       },
       help: {
         header: 'Commands to get help',
@@ -168,7 +182,7 @@ The character's copyright is on the original author and Nexus.`
   },
   OG: {
     index: {
-      siteName: 'KuriyamaBot Homepage',
+      siteName: 'KuriyamaBot',
       desc: 'KuriyamaBot homepage.'
     },
     introduce: {

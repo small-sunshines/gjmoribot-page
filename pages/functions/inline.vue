@@ -2,67 +2,58 @@
 div
   p.menu-label inline queries
   hr
-  .box
-    .media-content
-      .content
-        p
-          strong @gjmoribot img (search keyword)
-          | &nbsp;
-          small {{ $t('functions.inline.img.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.inline.img.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong @gjmoribot search (search keyword)
-          | &nbsp;
-          small {{ $t('functions.inline.search.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.inline.search.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong @gjmoribot youtube (search keyword)
-          | &nbsp;
-          small {{ $t('functions.inline.youtube.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.inline.youtube.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong @gjmoribot help
-          | &nbsp;
-          small {{ $t('functions.inline.help.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.inline.help.content') }}
+  Box
+    p(slot="header")
+      strong @gjmoribot img (search keyword)
+      | &nbsp;
+      small {{ $t('functions.inline.img.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.inline.img.content') }}
+  Box
+    p(slot="header")
+      strong @gjmoribot search (search keyword)
+      | &nbsp;
+      small {{ $t('functions.inline.search.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.inline.search.content') }}
+  Box
+    p(slot="header")
+      strong @gjmoribot youtube (search keyword)
+      | &nbsp;
+      small {{ $t('functions.inline.youtube.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.inline.youtube.content') }}
+  Box
+    p(slot="header")
+      strong @gjmoribot help
+      | &nbsp;
+      small {{ $t('functions.inline.help.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.inline.help.content') }}
 </template>
 
 <script>
 import buildmeta from '~/assets/buildmeta'
-import tag from '~/components/Tag.vue'
+
+import Box from '~/components/Box.vue'
+import Tag from '~/components/Tag.vue'
 
 export default {
   components: {
-    tag
+    Tag,
+    Box
   },
   head () {
     const title = 'Inline Queries :: Functions :: KuriyamaBot'

@@ -40,7 +40,8 @@ export default {
 **이 봇은 제가 쓰던 어떤 봇을 대체하기 위해서 만들어진 새로운 봇입니다.**
 
 쿠리야마 미라이는 경계의 저편에 등장하는 캐릭터입니다.
-캐릭터의 저작권은 원작자 및 Kyoto Animation crop 에 있습니다.`,
+캐릭터의 저작권은 원작자 및 Kyoto Animation crop 에 있습니다.
+`,
     git: 'Explore to KuriyamaBot'
   },
   running: {
@@ -88,15 +89,29 @@ export default {
     chatcommands: {
       img: {
         header: '채팅과 섞어 이미지를 검색하는 명령어',
-        content: '채팅과 섞어쓸 수 있는 구글에서 이미지를 검색하는 명령어입니다.'
+        content: 
+`
+채팅과 섞어쓸 수 있는 구글에서 이미지를 검색하는 명령어입니다.
+
+##### 사용법
+
+\`\`\`
+{img ReLU}
+\`\`\`
+`
       },
       search: {
         header: '채팅과 섞어 구글에 검색하는 명령어',
-        content: '채팅과 섞어쓸 수 있는 구글에 검색할 수 있는 명령어입니다.'
-      },
-      example: {
-        header: '사용 예시',
-        content: '그래서 여러분, {짤 이즈미 사기리} 어때요?'
+        content: 
+`
+채팅과 섞어쓸 수 있는 구글에 검색할 수 있는 명령어입니다.
+
+##### 사용법
+
+\`\`\`
+{search 크레브스 회로}
+\`\`\`
+`
       }
     },
     commands: {
@@ -168,7 +183,7 @@ export default {
   },
   OG: {
     index: {
-      siteName: 'KuriyamaBot Homepage',
+      siteName: 'KuriyamaBot',
       desc: '쿠리야마봇 홈페이지입니다.'
     },
     introduce: {

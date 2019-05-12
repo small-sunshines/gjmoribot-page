@@ -36,7 +36,7 @@ export default {
     Box
   },
   head () {
-    const title = 'Admins :: Functions :: KuriyamaBot'
+    const title = this.$t('OG.introduce.siteName')
     const { meta, link } = buildmeta({
       title,
       url: 'https://kuriyama.mori.space/functions/admins',

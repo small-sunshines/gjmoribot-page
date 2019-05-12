@@ -2,164 +2,128 @@
 div
   p.menu-label commands
   hr
-  .box
-    .media-content
-      .content
-        p
-          strong /start
-          | &nbsp;
-          small {{ $t('functions.commands.start.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-      br
-      p {{ $t('functions.commands.start.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /help
-          | &nbsp;
-          small {{ $t('functions.commands.help.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.commands.help.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /img
-          | &nbsp;
-          small {{ $t('functions.commands.img.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.commands.img.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /google
-          | &nbsp;
-          small {{ $t('functions.commands.google.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.commands.google.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /uptime
-          | &nbsp;
-          small {{ $t('functions.commands.uptime.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.commands.uptime.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /lang
-          | &nbsp;
-          small {{ $t('functions.commands.lang.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.commands.lang.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /me
-          | &nbsp;
-          small {{ $t('functions.commands.me.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.commands.me.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /whatanime
-          | &nbsp;
-          small {{ $t('functions.commands.whatanime.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.commands.whatanime.content') }}
-        br
-        p
-          | {{ $t('functions.commands.whatanime.api') }} &nbsp;
-          a.button.is-info(href="https://whatanime.ga/" target="_blank")
-            | {{ $t('functions.commands.whatanime.go') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /msginfo
-          | &nbsp;
-          small {{ $t('functions.commands.msginfo.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.commands.msginfo.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /homepage
-          | &nbsp;
-          small {{ $t('functions.commands.homepage.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.commands.homepage.content') }}
-  .box
-    .media-content
-      .content
-        p
-          strong /weather
-          | &nbsp;
-          small {{ $t('functions.commands.weather.header') }}
-          | &nbsp;
-          tag(type="master")
-          | &nbsp;
-          tag(type="beta")
-        br
-        p {{ $t('functions.commands.weather.content') }}
-        
+  Box
+    p(slot="header")
+      strong /start
+      | &nbsp;
+      small {{ $t('functions.commands.start.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.start.content') }}
+  Box
+    p(slot="header")
+      strong /help
+      | &nbsp;
+      small {{ $t('functions.commands.help.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.help.content') }}
+  Box
+    p(slot="header")
+      strong /img
+      | &nbsp;
+      small {{ $t('functions.commands.img.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.img.content') }}
+  Box
+    p(slot="header")
+      strong /google
+      | &nbsp;
+      small {{ $t('functions.commands.google.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.google.content') }}
+  Box
+    p(slot="header")
+      strong /uptime
+      | &nbsp;
+      small {{ $t('functions.commands.uptime.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.uptime.content') }}
+  Box
+    p(slot="header")
+      strong /lang
+      | &nbsp;
+      small {{ $t('functions.commands.lang.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.lang.content') }}
+  Box
+    p(slot="header")
+      strong /me
+      | &nbsp;
+      small {{ $t('functions.commands.me.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.me.content') }}
+  Box
+    p(slot="header")
+      strong /whatanime
+      | &nbsp;
+      small {{ $t('functions.commands.whatanime.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.whatanime.content') }}
+  Box
+    p(slot="header")
+      strong /msginfo
+      | &nbsp;
+      small {{ $t('functions.commands.msginfo.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.msginfo.content') }}
+  Box
+    p(slot="header")
+      strong /homepage
+      | &nbsp;
+      small {{ $t('functions.commands.homepage.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.homepage.content') }}
+  Box
+    p(slot="header")
+      strong /weather
+      | &nbsp;
+      small {{ $t('functions.commands.weather.header') }}
+      | &nbsp;
+      tag(type="master")
+      | &nbsp;
+      tag(type="beta")
+    p(slot="content") {{ $t('functions.commands.weather.content') }}
 </template>
 
 <script>
 import buildmeta from '~/assets/buildmeta'
-import tag from '~/components/Tag.vue'
+
+import Box from '~/components/Box.vue'
+import Tag from '~/components/Tag.vue'
 
 export default {
   components: {
-    tag
+    Tag,
+    Box
   },
   head () {
     const title = 'Commands :: Functions :: KuriyamaBot'
