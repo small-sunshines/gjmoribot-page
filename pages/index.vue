@@ -34,7 +34,7 @@ div
       tag.is-large(type="beta")
     br
     br
-    a.button.is-large.is-git(href="https://github.com/small-sunshines/kuriyamabot" target="_blank")
+    a.button.is-large.is-git(href="https://github.com/dalbodeule/kuriyamabot" target="_blank")
       p
         fa(:icon="['fab', 'git']" size="lg")
         | &nbsp; {{ $t('index.git') }}
@@ -78,8 +78,8 @@ export default {
       image: null,
       width: null,
       height: null,
-      author: 'small_sunshine',
-      twitterCreator: '@jioo0224'
+      author: 'dalbodeule',
+      twitterCreator: '@dalbodeule'
     }, [
       {hid: 'theme-color', name: 'theme-color', content: '#37AEE2'}
     ], null)

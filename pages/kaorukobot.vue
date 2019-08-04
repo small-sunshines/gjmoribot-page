@@ -13,7 +13,7 @@ div
         | &nbsp; KaorukoBot Comming soon!!
     br
     br
-    a.button.is-large.is-git(href="https://github.com/small-sunshines/kaorukoBot" target="_blank")
+    a.button.is-large.is-git(href="https://github.com/dalbodeule/kaorukoBot" target="_blank")
       p
         fa(:icon="['fab', 'git']" size="lg")
         | &nbsp; Explore to KaorukoBot
@@ -62,8 +62,8 @@ export default {
       image: null,
       width: null,
       height: null,
-      author: 'small_sunshine',
-      twitterCreator: '@jioo0224'
+      author: 'dalbodeule',
+      twitterCreator: '@dalbodeule'
     }, [
       {hid: 'theme-color', name: 'theme-color', content: '#7289DA'}
     ], null)

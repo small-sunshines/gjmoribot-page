@@ -10,17 +10,17 @@ div
           td 
             fa(:icon="['fas', 'microchip']")
             | &nbsp; CPU
-          td Vultr VCPU 1Core
+          td 2 vCore (Vultr)
         tr
           td
             fa(:icon="['fas', 'memory']")
             | &nbsp; RAM
-          td Vultr VRAM 1GB
+          td 4GB
         tr
           td
             fa(:icon="['fas', 'hdd']")
-            | &nbsp; SSD
-          td Vultr SSD 25GB
+            | &nbsp; Storage
+          td 80 GB SSD
         tr
           td
             fa(:icon="['fab', 'docker']")
@@ -46,8 +46,8 @@ export default {
       image: null,
       width: null,
       height: null,
-      author: 'small_sunshine',
-      twitterCreator: '@jioo0224'
+      author: 'dalbodeule',
+      twitterCreator: '@dalbodeule'
     }, [
       {hid: 'theme-color', name: 'theme-color', content: '#37AEE2'}
     ], null)

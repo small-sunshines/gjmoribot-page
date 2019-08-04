@@ -13,7 +13,7 @@ export default {
     changelang: 'Change Language'
   },
   footer: {
-    copyright: 'Copyright 2018. small-sunshine all rights reserved.'
+    copyright: 'Copyright 2018. dalbodeule all rights reserved.'
   },
   sidebar: {
     home: 'Home',
@@ -42,7 +42,10 @@ export default {
 **This bot is a new bot made to replace any bot I used.**
 
 Mirai Kuriyama is a character in the japanese manga Kyoukai no Kanata.
-The copyright of the character is in the original author and Kyoto Animation corp.`,
+The copyright of the character is in the original author and Kyoto Animation corp.
+
+**\#PrayForKyoAni**
+`,
     git: 'Explore to KuriyamaBot'
   },
   running: {

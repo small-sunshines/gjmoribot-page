@@ -13,7 +13,7 @@ export default {
     changelang: '언어 변경'
   },
   footer: {
-    copyright: 'Copyright 2018. 볕뉘 all rights reserved.'
+    copyright: 'Copyright 2018. 달보드레 all rights reserved.'
   },
   sidebar: {
     home: 'Home',
@@ -43,6 +43,8 @@ export default {
 
 쿠리야마 미라이는 경계의 저편에 등장하는 캐릭터입니다.
 캐릭터의 저작권은 원작자 및 Kyoto Animation crop 에 있습니다.
+
+**\#PrayForKyoAni**
 `,
     git: 'Explore to KuriyamaBot'
   },
